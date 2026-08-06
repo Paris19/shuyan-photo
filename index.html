@@ -85,8 +85,9 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 .home-section__subtitle{text-align:center;color:var(--color-text-secondary);font-size:16px;margin-bottom:48px}
 .home-features{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
 .home-feature{text-align:center}
-.home-feature__img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;margin-bottom:20px;filter:brightness(0.9);transition:filter 0.4s ease}
+.home-feature__img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:4px;margin-bottom:20px;filter:brightness(0.9);transition:filter 0.4s ease;background:var(--color-surface-card);min-height:180px}
 .home-feature:hover .home-feature__img{filter:brightness(1)}
+.home-feature__img[src=""]{opacity:0.3}
 .home-feature__title{font-family:var(--font-display);font-size:22px;font-weight:500;margin-bottom:8px}
 .home-feature__desc{color:var(--color-text-secondary);font-size:14px}
 
@@ -384,17 +385,17 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
     <p class="home-section__subtitle">每一帧都是光影与情感的交汇</p>
     <div class="home-features">
       <div class="home-feature" onclick="showPage('samples')" style="cursor:pointer">
-        <img class="home-feature__img" src="https://picsum.photos/seed/feature1/600/450" alt="作品" loading="lazy">
+        <img class="home-feature__img" id="home-feature-samples" src="" alt="作品" loading="lazy">
         <h3 class="home-feature__title">作品精选</h3>
         <p class="home-feature__desc">涵盖人像、风光、纪实等多种风格的专业摄影作品</p>
       </div>
-      <div class="home-feature" onclick="showPage('props')" style="cursor:pointer">
-        <img class="home-feature__img" src="https://picsum.photos/seed/feature2/600/450" alt="道具" loading="lazy">
-        <h3 class="home-feature__title">道具展示</h3>
-        <p class="home-feature__desc">服装、道具、妆造、发饰 — 完整的拍摄造型资源库</p>
+      <div class="home-feature" onclick="showPage('clients')" style="cursor:pointer">
+        <img class="home-feature__img" id="home-feature-clients" src="" alt="客片" loading="lazy">
+        <h3 class="home-feature__title">客片展示</h3>
+        <p class="home-feature__desc">真实客照展示 — 记录每一位客户的美好瞬间</p>
       </div>
       <div class="home-feature" onclick="showPage('videos')" style="cursor:pointer">
-        <img class="home-feature__img" src="https://picsum.photos/seed/feature3/600/450" alt="视频" loading="lazy">
+        <img class="home-feature__img" id="home-feature-videos" src="" alt="视频" loading="lazy">
         <h3 class="home-feature__title">视频作品</h3>
         <p class="home-feature__desc">动态影像记录每一个动人瞬间</p>
       </div>
@@ -418,10 +419,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
     <div class="upload-zone" id="upload-props" onclick="triggerUpload('props')">
       <svg class="upload-zone__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 16V4M12 4l-4 4M12 4l4 4M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>
       <p class="upload-zone__text">点击或拖拽上传图片到 <span id="props-tab-name">服装</span></p>
-      <p class="upload-zone__hint">支持 JPG / PNG / WebP，单文件不超过 10MB</p>
+      <p class="upload-zone__hint">支持 JPG / PNG / WebP，批量上传自动归为一组</p>
       <div class="upload-zone__progress" id="progress-props"><div class="upload-zone__progress-bar" id="progress-bar-props"></div></div>
     </div>
-    <div class="masonry" id="gallery-props"></div>
+    <div class="album-grid" id="gallery-props"></div>
   </div>
 </section>
 
@@ -653,28 +654,28 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 const galleryData = {
   props: {
     costume: [
-      {type:'image',src:'https://picsum.photos/seed/costume1/600/800',title:'白色婚纱',date:'2026.07'},
-      {type:'image',src:'https://picsum.photos/seed/costume2/600/450',title:'复古旗袍',date:'2026.06'},
-      {type:'image',src:'https://picsum.photos/seed/costume3/600/900',title:'汉服系列',date:'2026.05'},
-      {type:'image',src:'https://picsum.photos/seed/costume4/600/600',title:'晚礼服',date:'2026.04'},
+      {type:'album',cover:'https://picsum.photos/seed/costume1/600/800',title:'白色婚纱',count:1,date:'2026.07',bts:'',photos:[{src:'https://picsum.photos/seed/costume1/600/800',title:'白色婚纱'}]},
+      {type:'album',cover:'https://picsum.photos/seed/costume2/600/450',title:'复古旗袍',count:1,date:'2026.06',bts:'',photos:[{src:'https://picsum.photos/seed/costume2/600/450',title:'复古旗袍'}]},
+      {type:'album',cover:'https://picsum.photos/seed/costume3/600/900',title:'汉服系列',count:1,date:'2026.05',bts:'',photos:[{src:'https://picsum.photos/seed/costume3/600/900',title:'汉服系列'}]},
+      {type:'album',cover:'https://picsum.photos/seed/costume4/600/600',title:'晚礼服',count:1,date:'2026.04',bts:'',photos:[{src:'https://picsum.photos/seed/costume4/600/600',title:'晚礼服'}]},
     ],
     prop: [
-      {type:'image',src:'https://picsum.photos/seed/prop1/600/800',title:'复古道具',date:'2026.07'},
-      {type:'image',src:'https://picsum.photos/seed/prop2/600/450',title:'花艺布置',date:'2026.06'},
-      {type:'image',src:'https://picsum.photos/seed/prop3/600/600',title:'手工饰品',date:'2026.05'},
-      {type:'image',src:'https://picsum.photos/seed/prop4/600/800',title:'场景道具',date:'2026.04'},
+      {type:'album',cover:'https://picsum.photos/seed/prop1/600/800',title:'复古道具',count:1,date:'2026.07',bts:'',photos:[{src:'https://picsum.photos/seed/prop1/600/800',title:'复古道具'}]},
+      {type:'album',cover:'https://picsum.photos/seed/prop2/600/450',title:'花艺布置',count:1,date:'2026.06',bts:'',photos:[{src:'https://picsum.photos/seed/prop2/600/450',title:'花艺布置'}]},
+      {type:'album',cover:'https://picsum.photos/seed/prop3/600/600',title:'手工饰品',count:1,date:'2026.05',bts:'',photos:[{src:'https://picsum.photos/seed/prop3/600/600',title:'手工饰品'}]},
+      {type:'album',cover:'https://picsum.photos/seed/prop4/600/800',title:'场景道具',count:1,date:'2026.04',bts:'',photos:[{src:'https://picsum.photos/seed/prop4/600/800',title:'场景道具'}]},
     ],
     makeup: [
-      {type:'image',src:'https://picsum.photos/seed/makeup1/600/900',title:'新娘妆造',date:'2026.07'},
-      {type:'image',src:'https://picsum.photos/seed/makeup2/600/600',title:'复古妆容',date:'2026.06'},
-      {type:'image',src:'https://picsum.photos/seed/makeup3/600/800',title:'清新裸妆',date:'2026.05'},
-      {type:'image',src:'https://picsum.photos/seed/makeup4/600/450',title:'舞台妆',date:'2026.04'},
+      {type:'album',cover:'https://picsum.photos/seed/makeup1/600/900',title:'新娘妆造',count:1,date:'2026.07',bts:'',photos:[{src:'https://picsum.photos/seed/makeup1/600/900',title:'新娘妆造'}]},
+      {type:'album',cover:'https://picsum.photos/seed/makeup2/600/600',title:'复古妆容',count:1,date:'2026.06',bts:'',photos:[{src:'https://picsum.photos/seed/makeup2/600/600',title:'复古妆容'}]},
+      {type:'album',cover:'https://picsum.photos/seed/makeup3/600/800',title:'清新裸妆',count:1,date:'2026.05',bts:'',photos:[{src:'https://picsum.photos/seed/makeup3/600/800',title:'清新裸妆'}]},
+      {type:'album',cover:'https://picsum.photos/seed/makeup4/600/450',title:'舞台妆',count:1,date:'2026.04',bts:'',photos:[{src:'https://picsum.photos/seed/makeup4/600/450',title:'舞台妆'}]},
     ],
     hair: [
-      {type:'image',src:'https://picsum.photos/seed/hair1/600/800',title:'盘发造型',date:'2026.07'},
-      {type:'image',src:'https://picsum.photos/seed/hair2/600/600',title:'编发设计',date:'2026.06'},
-      {type:'image',src:'https://picsum.photos/seed/hair3/600/900',title:'复古卷发',date:'2026.05'},
-      {type:'image',src:'https://picsum.photos/seed/hair4/600/450',title:'发饰搭配',date:'2026.04'},
+      {type:'album',cover:'https://picsum.photos/seed/hair1/600/800',title:'盘发造型',count:1,date:'2026.07',bts:'',photos:[{src:'https://picsum.photos/seed/hair1/600/800',title:'盘发造型'}]},
+      {type:'album',cover:'https://picsum.photos/seed/hair2/600/600',title:'编发设计',count:1,date:'2026.06',bts:'',photos:[{src:'https://picsum.photos/seed/hair2/600/600',title:'编发设计'}]},
+      {type:'album',cover:'https://picsum.photos/seed/hair3/600/900',title:'复古卷发',count:1,date:'2026.05',bts:'',photos:[{src:'https://picsum.photos/seed/hair3/600/900',title:'复古卷发'}]},
+      {type:'album',cover:'https://picsum.photos/seed/hair4/600/450',title:'发饰搭配',count:1,date:'2026.04',bts:'',photos:[{src:'https://picsum.photos/seed/hair4/600/450',title:'发饰搭配'}]},
     ]
   },
   samples: {
@@ -782,7 +783,8 @@ function renderGallery(type,subType) {
     return;
   }
 
-  var isAlbumType = (type === 'samples' || type === 'clients');
+  var isAlbumType = (type === 'samples' || type === 'clients' || type === 'props');
+  var showBts = (type === 'samples' || type === 'clients');
 
   container.innerHTML = '';
   items.forEach((item,index) => {
@@ -794,9 +796,9 @@ function renderGallery(type,subType) {
         <img class="album-card__cover" src="${(item.photos && item.photos[0]) ? item.photos[0].src : item.cover}" alt="${item.title}" loading="lazy">
         <div class="album-card__overlay"></div>
         <div class="album-card__badge">${item.count}张</div>
-        <button class="album-card__bts${item.bts ? ' album-card__bts--active' : ''}" onclick="event.stopPropagation();playAlbumBts('${type}',${index})" title="15s花絮视频">
+        ${showBts ? `<button class="album-card__bts${item.bts ? ' album-card__bts--active' : ''}" onclick="event.stopPropagation();playAlbumBts('${type}',${index})" title="15s花絮视频">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
-        </button>
+        </button>` : ''}
         <div class="album-card__title">${item.title}</div>`;
 
       var deleteBtn = document.createElement('button');
@@ -848,7 +850,7 @@ var currentAlbum = null;
 var dragSrcIndex = null;
 
 function openAlbumDetail(type,index) {
-  var album = getGalleryArray(type, type === 'samples' ? currentSamplesTab : null)[index];
+  var album = getGalleryArray(type, type === 'samples' ? currentSamplesTab : (type === 'props' ? currentPropsTab : null))[index];
   currentAlbum = {type:type,index:index,album:album};
   var titleEl = document.getElementById('albumDetailTitle');
   titleEl.textContent = album.title;
@@ -857,7 +859,7 @@ function openAlbumDetail(type,index) {
     if (newTitle && newTitle !== album.title) {
       album.title = newTitle;
       album.count = album.photos.length;
-      renderGallery(type, type === 'samples' ? currentSamplesTab : null);
+      renderGallery(type, type === 'samples' ? currentSamplesTab : (type === 'props' ? currentPropsTab : null));
       saveData();
       showToast('名称已更新','success');
     } else if (!newTitle) {
@@ -869,10 +871,15 @@ function openAlbumDetail(type,index) {
   };
 
   var btsEl = document.getElementById('albumDetailBts');
-  if (album.bts) {
-    btsEl.innerHTML = '<video src="' + album.bts + '" controls autoplay loop></video><button class="album-detail__bts-replace" onclick="event.stopPropagation();uploadBtsVideo()">更换视频</button>';
+  if (type === 'props') {
+    btsEl.style.display = 'none';
   } else {
-    btsEl.innerHTML = '<div class="album-detail__bts-placeholder" onclick="uploadBtsVideo()"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" style="opacity:0.4"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg><div style="font-size:13px">上传 15s 花絮视频</div><div class="album-detail__bts-upload-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16V4M12 4l-4 4M12 4l4 4M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>点击选择视频文件</div><div style="font-size:11px;opacity:0.5">支持 MP4 / MOV / WebM，建议 15 秒以内</div></div>';
+    btsEl.style.display = '';
+    if (album.bts) {
+      btsEl.innerHTML = '<video src="' + album.bts + '" controls autoplay loop></video><button class="album-detail__bts-replace" onclick="event.stopPropagation();uploadBtsVideo()">更换视频</button>';
+    } else {
+      btsEl.innerHTML = '<div class="album-detail__bts-placeholder" onclick="uploadBtsVideo()"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" style="opacity:0.4"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg><div style="font-size:13px">上传 15s 花絮视频</div><div class="album-detail__bts-upload-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16V4M12 4l-4 4M12 4l4 4M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2"/></svg>点击选择视频文件</div><div style="font-size:11px;opacity:0.5">支持 MP4 / MOV / WebM，建议 15 秒以内</div></div>';
+    }
   }
 
   renderAlbumPhotos();
@@ -976,7 +983,7 @@ function confirmDeletePhoto() {
   pendingDeletePhotoIdx = null;
   closeConfirm();
   renderAlbumPhotos();
-  renderGallery(currentAlbum.type, currentAlbum.type === 'samples' ? currentSamplesTab : null);
+  renderGallery(currentAlbum.type, currentAlbum.type === 'samples' ? currentSamplesTab : (currentAlbum.type === 'props' ? currentPropsTab : null));
   saveData();
   showToast('照片已删除','success');
 }
@@ -1009,7 +1016,7 @@ function uploadAlbumPhotos() {
         if (completed === valid.length) {
           currentAlbum.album.count = currentAlbum.album.photos.length;
           renderAlbumPhotos();
-          renderGallery(currentAlbum.type, currentAlbum.type === 'samples' ? currentSamplesTab : null);
+          renderGallery(currentAlbum.type, currentAlbum.type === 'samples' ? currentSamplesTab : (currentAlbum.type === 'props' ? currentPropsTab : null));
           saveData();
           showToast('成功添加 ' + valid.length + ' 张照片（已加水印）','success');
         }
@@ -1141,8 +1148,8 @@ function handleFiles(fileList,type) {
       const now = new Date();
       const dateStr = now.getFullYear() + '.' + String(now.getMonth()+1).padStart(2,'0');
 
-      if (type === 'samples' || type === 'clients') {
-        var targetArr = (type === 'samples') ? galleryData.samples[currentSamplesTab] : galleryData.clients;
+      if (type === 'samples' || type === 'clients' || type === 'props') {
+        var targetArr = (type === 'samples') ? galleryData.samples[currentSamplesTab] : (type === 'props') ? galleryData.props[currentPropsTab] : galleryData.clients;
         if (i === 0) {
           var albumTitle = file.name.replace(/\.[^.]+$/,'');
           var newAlbum = {
@@ -1170,13 +1177,7 @@ function handleFiles(fileList,type) {
           item.thumb = e.target.result;
           item.duration = '—';
         }
-        if (type === 'props') {
-          galleryData.props[currentPropsTab].unshift(item);
-        } else if (type === 'samples') {
-          galleryData.samples[currentSamplesTab].unshift(item);
-        } else {
-          galleryData[type].unshift(item);
-        }
+        galleryData[type].unshift(item);
       }
 
       completed++;
@@ -1185,7 +1186,7 @@ function handleFiles(fileList,type) {
       if (completed === total) {
         renderGallery(type, type === 'props' ? currentPropsTab : (type === 'samples' ? currentSamplesTab : null));
         saveData();
-        if (type === 'samples' || type === 'clients') {
+        if (type === 'samples' || type === 'clients' || type === 'props') {
           showToast('成功上传 ' + total + ' 张照片，已归为新相册（已加水印）','success');
         } else {
           showToast('成功上传 ' + total + ' 个' + (isVideo ? '视频' : '图片（已加水印）'),'success');
@@ -1365,6 +1366,7 @@ function loadData() {
         galleryData.samples = parsed.samples;
         galleryData.clients = parsed.clients;
         galleryData.videos = parsed.videos || galleryData.videos;
+        migratePropsData();
         return true;
       }
     }
@@ -1398,6 +1400,44 @@ function renderAllGalleries() {
   renderGallery('samples','hanfu');
   renderGallery('clients');
   renderGallery('videos');
+  updateHomeImages();
+}
+
+function getFirstImage(type) {
+  var items = getGalleryArray(type, type === 'samples' ? currentSamplesTab : (type === 'props' ? currentPropsTab : null));
+  if (!items || items.length === 0) return '';
+  var first = items[0];
+  if (first.type === 'album') {
+    if (first.photos && first.photos.length > 0) return first.photos[0].src;
+    return first.cover || '';
+  }
+  if (first.type === 'video') return first.thumb || first.src || '';
+  return first.src || '';
+}
+
+function updateHomeImages() {
+  // Hero background: use first sample image
+  var heroImg = getFirstImage('samples');
+  var heroBg = document.getElementById('heroBg');
+  if (heroBg) {
+    if (heroImg) {
+      heroBg.style.backgroundImage = 'url("' + heroImg + '")';
+    } else {
+      heroBg.style.backgroundImage = "url('hero-bg.jpg')";
+    }
+  }
+
+  // Feature card 1: 样片 first image
+  var samplesImg = document.getElementById('home-feature-samples');
+  if (samplesImg) samplesImg.src = heroImg || '';
+
+  // Feature card 2: 客片 first image
+  var clientsImg = document.getElementById('home-feature-clients');
+  if (clientsImg) clientsImg.src = getFirstImage('clients') || '';
+
+  // Feature card 3: 视频 first image (thumb)
+  var videosImg = document.getElementById('home-feature-videos');
+  if (videosImg) videosImg.src = getFirstImage('videos') || '';
 }
 
 function hideLoading() {
@@ -1414,15 +1454,32 @@ function applyGalleryData(data) {
   galleryData.samples = data.samples;
   galleryData.clients = data.clients;
   galleryData.videos = data.videos || galleryData.videos;
+  migratePropsData();
   return true;
 }
 
+function migratePropsData() {
+  Object.keys(galleryData.props).forEach(function(tab) {
+    var items = galleryData.props[tab];
+    if (items.length > 0 && items[0].type !== 'album') {
+      galleryData.props[tab] = items.map(function(item) {
+        if (item.type === 'album') return item;
+        return {
+          type: 'album',
+          cover: item.src,
+          title: item.title || '未命名',
+          count: 1,
+          date: item.date || '',
+          bts: '',
+          photos: [{src: item.src, title: item.title || ''}]
+        };
+      });
+    }
+  });
+}
+
 function init() {
-  // Hero background
-  const heroBg = document.getElementById('heroBg');
-  if (heroBg) {
-    heroBg.style.backgroundImage = "url('hero-bg.jpg')";
-  }
+  // Hero background will be set by updateHomeImages() after data loads
 
   // Try loading from localStorage first (for local editing sessions)
   var hasLocal = loadData();
