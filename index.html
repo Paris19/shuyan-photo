@@ -998,9 +998,10 @@ function uploadAlbumPhotos() {
     var completed = 0;
     valid.forEach(function(file) {
       var reader = new FileReader();
-      reader.onload = function(ev) {
+      reader.onload = async function(ev) {
+        var imgSrc = await addWatermark(ev.target.result);
         currentAlbum.album.photos.push({
-          src: ev.target.result,
+          src: imgSrc,
           title: file.name.replace(/\.[^.]+$/,''),
           date: new Date().getFullYear() + '.' + String(new Date().getMonth()+1).padStart(2,'0')
         });
@@ -1010,7 +1011,7 @@ function uploadAlbumPhotos() {
           renderAlbumPhotos();
           renderGallery(currentAlbum.type, currentAlbum.type === 'samples' ? currentSamplesTab : null);
           saveData();
-          showToast('成功添加 ' + valid.length + ' 张照片','success');
+          showToast('成功添加 ' + valid.length + ' 张照片（已加水印）','success');
         }
       };
       reader.readAsDataURL(file);
@@ -1054,6 +1055,41 @@ function uploadBtsVideo() {
 }
 
 // ===================== FILE UPLOAD =====================
+// ===================== WATERMARK =====================
+function addWatermark(dataUrl) {
+  return new Promise(function(resolve) {
+    var img = new Image();
+    img.onload = function() {
+      var canvas = document.createElement('canvas');
+      canvas.width = img.width;
+      canvas.height = img.height;
+      var ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0);
+
+      var text = '书衍';
+      var minDim = Math.min(img.width, img.height);
+      var fontSize = Math.max(24, Math.floor(minDim / 16));
+      var padding = Math.floor(fontSize * 1.2);
+
+      ctx.font = '500 ' + fontSize + 'px "STKaiti","KaiTi","Kaiti SC","楷体","Noto Serif SC",serif';
+      ctx.textAlign = 'center';
+      ctx.textBaseline = 'bottom';
+
+      ctx.shadowColor = 'rgba(0,0,0,0.35)';
+      ctx.shadowBlur = fontSize / 5;
+      ctx.shadowOffsetX = 0;
+      ctx.shadowOffsetY = 1;
+
+      ctx.fillStyle = 'rgba(255,255,255,0.55)';
+      ctx.fillText(text, img.width / 2, img.height - padding);
+
+      resolve(canvas.toDataURL('image/jpeg', 0.92));
+    };
+    img.onerror = function() { resolve(dataUrl); };
+    img.src = dataUrl;
+  });
+}
+
 function triggerUpload(type) {
   const input = document.createElement('input');
   input.type = 'file';
@@ -1100,7 +1136,8 @@ function handleFiles(fileList,type) {
 
   validFiles.forEach((file,i) => {
     const reader = new FileReader();
-    reader.onload = (e) => {
+    reader.onload = async (e) => {
+      var imgSrc = isVideo ? e.target.result : await addWatermark(e.target.result);
       const now = new Date();
       const dateStr = now.getFullYear() + '.' + String(now.getMonth()+1).padStart(2,'0');
 
@@ -1110,7 +1147,7 @@ function handleFiles(fileList,type) {
           var albumTitle = file.name.replace(/\.[^.]+$/,'');
           var newAlbum = {
             type:'album',
-            cover:e.target.result,
+            cover:imgSrc,
             title:albumTitle,
             count:0,
             date:dateStr,
@@ -1120,12 +1157,12 @@ function handleFiles(fileList,type) {
           targetArr.unshift(newAlbum);
         }
         var album = targetArr[0];
-        album.photos.push({src:e.target.result,title:file.name.replace(/\.[^.]+$/,'')});
+        album.photos.push({src:imgSrc,title:file.name.replace(/\.[^.]+$/,'')});
         album.count = album.photos.length;
       } else {
         const item = {
           type: isVideo ? 'video' : 'image',
-          src: e.target.result,
+          src: imgSrc,
           title: file.name.replace(/\.[^.]+$/,''),
           date: dateStr
         };
@@ -1149,9 +1186,9 @@ function handleFiles(fileList,type) {
         renderGallery(type, type === 'props' ? currentPropsTab : (type === 'samples' ? currentSamplesTab : null));
         saveData();
         if (type === 'samples' || type === 'clients') {
-          showToast('成功上传 ' + total + ' 张照片，已归为新相册','success');
+          showToast('成功上传 ' + total + ' 张照片，已归为新相册（已加水印）','success');
         } else {
-          showToast('成功上传 ' + total + ' 个' + (isVideo ? '视频' : '图片'),'success');
+          showToast('成功上传 ' + total + ' 个' + (isVideo ? '视频' : '图片（已加水印）'),'success');
         }
         setTimeout(() => {
           if (progressEl) progressEl.classList.remove('upload-zone__progress--active');
