@@ -267,6 +267,12 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 .reveal{opacity:0;transform:translateY(30px);transition:opacity 0.6s ease,transform 0.6s ease}
 .reveal--visible{opacity:1;transform:translateY(0)}
 
+/* ===== CSS WATERMARK OVERLAY ===== */
+.album-card::after{content:'\4E66\884E';position:absolute;bottom:42px;left:50%;transform:translateX(-50%);font-family:'STKaiti','KaiTi','Kaiti SC','\6977\4F53','Noto Serif SC',serif;font-weight:500;font-size:12px;color:rgba(255,255,255,0.5);text-shadow:0 1px 4px rgba(0,0,0,0.5);pointer-events:none;z-index:3;letter-spacing:0.08em;white-space:nowrap}
+.album-detail__photo::after,.masonry__item:not(.masonry__item--video)::after{content:'\4E66\884E';position:absolute;bottom:8px;left:50%;transform:translateX(-50%);font-family:'STKaiti','KaiTi','Kaiti SC','\6977\4F53','Noto Serif SC',serif;font-weight:500;font-size:13px;color:rgba(255,255,255,0.5);text-shadow:0 1px 4px rgba(0,0,0,0.5);pointer-events:none;z-index:3;letter-spacing:0.08em;white-space:nowrap}
+.album-detail__photo{position:relative}
+.lightbox:not(.lightbox--video)::after{content:'\4E66\884E';position:absolute;bottom:56px;left:50%;transform:translateX(-50%);font-family:'STKaiti','KaiTi','Kaiti SC','\6977\4F53','Noto Serif SC',serif;font-weight:500;font-size:20px;color:rgba(255,255,255,0.45);text-shadow:0 1px 6px rgba(0,0,0,0.5);pointer-events:none;z-index:5;letter-spacing:0.1em}
+
 /* ===== RESPONSIVE ===== */
 @media(max-width:1023px){
   .nav{padding:0 24px}
@@ -810,8 +816,8 @@ function renderGallery(type,subType) {
       div.onclick = function() { openAlbumDetail(type,index); };
       container.appendChild(div);
     } else {
-      div.className = 'masonry__item';
       var isVideo = item.type === 'video';
+      div.className = 'masonry__item' + (isVideo ? ' masonry__item--video' : '');
       if (isVideo) {
         div.innerHTML = `
           <img class="masonry__img" src="${item.thumb}" alt="${item.title}" loading="lazy">
@@ -1048,15 +1054,16 @@ function uploadBtsVideo() {
       showToast('视频文件不能超过 100MB','error');
       return;
     }
-    var reader = new FileReader();
-    reader.onload = function(ev) {
-      currentAlbum.album.bts = ev.target.result;
+    showToast('正在上传视频到 Cloudinary...','info');
+    uploadToCloudinary(file).then(function(cloudUrl) {
+      currentAlbum.album.bts = cloudUrl;
       var btsEl = document.getElementById('albumDetailBts');
-      btsEl.innerHTML = '<video src="' + ev.target.result + '" controls autoplay loop></video><button class="album-detail__bts-replace" onclick="event.stopPropagation();uploadBtsVideo()">更换视频</button>';
+      btsEl.innerHTML = '<video src="' + cloudUrl + '" controls autoplay loop></video><button class="album-detail__bts-replace" onclick="event.stopPropagation();uploadBtsVideo()">更换视频</button>';
       saveData();
       showToast('花絮视频上传成功','success');
-    };
-    reader.readAsDataURL(file);
+    }).catch(function(err) {
+      showToast('视频上传失败: ' + err.message,'error');
+    });
   };
   input.click();
 }
@@ -1095,6 +1102,33 @@ function addWatermark(dataUrl) {
     img.onerror = function() { resolve(dataUrl); };
     img.src = dataUrl;
   });
+}
+
+// ===================== CLOUDINARY UPLOAD =====================
+function uploadToCloudinary(file, onProgress) {
+  return new Promise(function(resolve, reject) {
+    var formData = new FormData();
+    formData.append('file', file);
+    formData.append('upload_preset', 'shuyan_unsigned');
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'https://api.cloudinary.com/v1_1/fi7vaama/auto/upload');
+    xhr.upload.onprogress = function(e) {
+      if (e.lengthComputable && onProgress) onProgress(e.loaded / e.total);
+    };
+    xhr.onload = function() {
+      if (xhr.status === 200) {
+        var res = JSON.parse(xhr.responseText);
+        resolve(res.secure_url);
+      } else {
+        reject(new Error('Upload failed: ' + xhr.status));
+      }
+    };
+    xhr.onerror = function() { reject(new Error('Network error')); };
+    xhr.send(formData);
+  });
+}
+function getVideoThumb(videoUrl) {
+  return videoUrl.replace('/video/upload/', '/video/upload/so_0,f_jpg/').replace(/\.[^.\/]+$/, '');
 }
 
 function triggerUpload(type) {
@@ -1142,66 +1176,102 @@ function handleFiles(fileList,type) {
   const total = validFiles.length;
 
   validFiles.forEach((file,i) => {
-    const reader = new FileReader();
-    reader.onload = async (e) => {
-      var imgSrc = isVideo ? e.target.result : await addWatermark(e.target.result);
-      const now = new Date();
-      const dateStr = now.getFullYear() + '.' + String(now.getMonth()+1).padStart(2,'0');
-
-      if (type === 'samples' || type === 'clients' || type === 'props') {
-        var targetArr = (type === 'samples') ? galleryData.samples[currentSamplesTab] : (type === 'props') ? galleryData.props[currentPropsTab] : galleryData.clients;
-        if (i === 0) {
-          var albumTitle = file.name.replace(/\.[^.]+$/,'');
-          var newAlbum = {
-            type:'album',
-            cover:imgSrc,
-            title:albumTitle,
-            count:0,
-            date:dateStr,
-            bts:'',
-            photos:[]
-          };
-          targetArr.unshift(newAlbum);
+    if (isVideo) {
+      uploadToCloudinary(file, function(progress) {
+        if (barEl) barEl.style.width = ((completed + progress) / total * 100) + '%';
+      }).then(function(cloudUrl) {
+        var thumb = getVideoThumb(cloudUrl);
+        const now = new Date();
+        const dateStr = now.getFullYear() + '.' + String(now.getMonth()+1).padStart(2,'0');
+        galleryData.videos.unshift({
+          type:'video',
+          src:cloudUrl,
+          thumb:thumb,
+          title:file.name.replace(/\.[^.]+$/,''),
+          date:dateStr,
+          duration:'—'
+        });
+        completed++;
+        if (barEl) barEl.style.width = (completed / total * 100) + '%';
+        if (completed === total) {
+          renderGallery('videos');
+          saveData();
+          showToast('成功上传 ' + total + ' 个视频到 Cloudinary','success');
+          setTimeout(() => {
+            if (progressEl) progressEl.classList.remove('upload-zone__progress--active');
+            if (barEl) barEl.style.width = '0';
+          },500);
         }
-        var album = targetArr[0];
-        album.photos.push({src:imgSrc,title:file.name.replace(/\.[^.]+$/,'')});
-        album.count = album.photos.length;
-      } else {
-        const item = {
-          type: isVideo ? 'video' : 'image',
-          src: imgSrc,
-          title: file.name.replace(/\.[^.]+$/,''),
-          date: dateStr
-        };
-        if (isVideo) {
-          item.thumb = e.target.result;
-          item.duration = '—';
+      }).catch(function(err) {
+        showToast(file.name + ' 上传失败','error');
+        completed++;
+        if (barEl) barEl.style.width = (completed / total * 100) + '%';
+        if (completed === total) {
+          renderGallery('videos');
+          saveData();
+          setTimeout(() => {
+            if (progressEl) progressEl.classList.remove('upload-zone__progress--active');
+            if (barEl) barEl.style.width = '0';
+          },500);
         }
-        galleryData[type].unshift(item);
-      }
+      });
+    } else {
+      const reader = new FileReader();
+      reader.onload = async (e) => {
+        var imgSrc = await addWatermark(e.target.result);
+        const now = new Date();
+        const dateStr = now.getFullYear() + '.' + String(now.getMonth()+1).padStart(2,'0');
 
-      completed++;
-      if (barEl) barEl.style.width = (completed / total * 100) + '%';
-
-      if (completed === total) {
-        renderGallery(type, type === 'props' ? currentPropsTab : (type === 'samples' ? currentSamplesTab : null));
-        saveData();
         if (type === 'samples' || type === 'clients' || type === 'props') {
-          showToast('成功上传 ' + total + ' 张照片，已归为新相册（已加水印）','success');
+          var targetArr = (type === 'samples') ? galleryData.samples[currentSamplesTab] : (type === 'props') ? galleryData.props[currentPropsTab] : galleryData.clients;
+          if (i === 0) {
+            var albumTitle = file.name.replace(/\.[^.]+$/,'');
+            var newAlbum = {
+              type:'album',
+              cover:imgSrc,
+              title:albumTitle,
+              count:0,
+              date:dateStr,
+              bts:'',
+              photos:[]
+            };
+            targetArr.unshift(newAlbum);
+          }
+          var album = targetArr[0];
+          album.photos.push({src:imgSrc,title:file.name.replace(/\.[^.]+$/,'')});
+          album.count = album.photos.length;
         } else {
-          showToast('成功上传 ' + total + ' 个' + (isVideo ? '视频' : '图片（已加水印）'),'success');
+          galleryData[type].unshift({
+            type:'image',
+            src:imgSrc,
+            title:file.name.replace(/\.[^.]+$/,''),
+            date:dateStr
+          });
         }
-        setTimeout(() => {
-          if (progressEl) progressEl.classList.remove('upload-zone__progress--active');
-          if (barEl) barEl.style.width = '0';
-        },500);
-      }
-    };
-    reader.onerror = () => {
-      showToast(`读取 ${file.name} 失败`,'error');
-      completed++;
-    };
-    reader.readAsDataURL(file);
+
+        completed++;
+        if (barEl) barEl.style.width = (completed / total * 100) + '%';
+
+        if (completed === total) {
+          renderGallery(type, type === 'props' ? currentPropsTab : (type === 'samples' ? currentSamplesTab : null));
+          saveData();
+          if (type === 'samples' || type === 'clients' || type === 'props') {
+            showToast('成功上传 ' + total + ' 张照片，已归为新相册（已加水印）','success');
+          } else {
+            showToast('成功上传 ' + total + ' 张图片（已加水印）','success');
+          }
+          setTimeout(() => {
+            if (progressEl) progressEl.classList.remove('upload-zone__progress--active');
+            if (barEl) barEl.style.width = '0';
+          },500);
+        }
+      };
+      reader.onerror = () => {
+        showToast('读取 ' + file.name + ' 失败','error');
+        completed++;
+      };
+      reader.readAsDataURL(file);
+    }
   });
 }
 
@@ -1252,11 +1322,15 @@ function prevLightbox() {
 function updateLightbox() {
   const item = lightboxItems[lightboxIndex];
   const mediaEl = document.getElementById('lightboxMedia');
+  const lbEl = document.getElementById('lightbox');
   if (item.type === 'video' && item.src) {
+    lbEl.classList.add('lightbox--video');
     mediaEl.innerHTML = `<video class="lightbox__media" src="${item.src}" controls autoplay></video>`;
   } else if (item.type === 'video') {
+    lbEl.classList.add('lightbox--video');
     mediaEl.innerHTML = `<img class="lightbox__media" src="${item.thumb}" alt="${item.title}">`;
   } else {
+    lbEl.classList.remove('lightbox--video');
     mediaEl.innerHTML = `<img class="lightbox__media" src="${item.src}" alt="${item.title}">`;
   }
   document.getElementById('lightboxCounter').textContent = (lightboxIndex + 1) + ' / ' + lightboxItems.length;
