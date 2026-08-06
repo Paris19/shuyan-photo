@@ -2,106 +2,240 @@
   "props": {
     "costume": [
       {
-        "type": "image",
-        "src": "https://picsum.photos/seed/costume1/600/800",
+        "type": "album",
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/v1785992818/n8joaqo3xy4ylzq1tfzv.jpg",
         "title": "白色婚纱",
-        "date": "2026.07"
+        "count": 2,
+        "date": "2026.07",
+        "bts": "",
+        "photos": [
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1785992818/n8joaqo3xy4ylzq1tfzv.jpg",
+            "title": "IMG_6801",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1785992819/nmheocxjpa6r2s6yqgwa.jpg",
+            "title": "IMG_6802",
+            "date": "2026.08"
+          }
+        ]
       },
       {
-        "type": "image",
-        "src": "https://picsum.photos/seed/costume2/600/450",
+        "type": "album",
+        "cover": "https://picsum.photos/seed/costume2/600/450",
         "title": "复古旗袍",
-        "date": "2026.06"
+        "count": 1,
+        "date": "2026.06",
+        "bts": "",
+        "photos": [
+          {
+            "src": "https://picsum.photos/seed/costume2/600/450",
+            "title": "复古旗袍"
+          }
+        ]
       },
       {
-        "type": "image",
-        "src": "https://picsum.photos/seed/costume3/600/900",
+        "type": "album",
+        "cover": "https://picsum.photos/seed/costume3/600/900",
         "title": "汉服系列",
-        "date": "2026.05"
+        "count": 1,
+        "date": "2026.05",
+        "bts": "",
+        "photos": [
+          {
+            "src": "https://picsum.photos/seed/costume3/600/900",
+            "title": "汉服系列"
+          }
+        ]
       },
       {
-        "type": "image",
-        "src": "https://picsum.photos/seed/costume4/600/600",
+        "type": "album",
+        "cover": "https://picsum.photos/seed/costume4/600/600",
         "title": "晚礼服",
-        "date": "2026.04"
+        "count": 1,
+        "date": "2026.04",
+        "bts": "",
+        "photos": [
+          {
+            "src": "https://picsum.photos/seed/costume4/600/600",
+            "title": "晚礼服"
+          }
+        ]
       }
     ],
     "prop": [
       {
-        "type": "image",
-        "src": "https://picsum.photos/seed/prop1/600/800",
+        "type": "album",
+        "cover": "https://picsum.photos/seed/prop1/600/800",
         "title": "复古道具",
-        "date": "2026.07"
+        "count": 1,
+        "date": "2026.07",
+        "bts": "",
+        "photos": [
+          {
+            "src": "https://picsum.photos/seed/prop1/600/800",
+            "title": "复古道具"
+          }
+        ]
       },
       {
-        "type": "image",
-        "src": "https://picsum.photos/seed/prop2/600/450",
+        "type": "album",
+        "cover": "https://picsum.photos/seed/prop2/600/450",
         "title": "花艺布置",
-        "date": "2026.06"
+        "count": 1,
+        "date": "2026.06",
+        "bts": "",
+        "photos": [
+          {
+            "src": "https://picsum.photos/seed/prop2/600/450",
+            "title": "花艺布置"
+          }
+        ]
       },
       {
-        "type": "image",
-        "src": "https://picsum.photos/seed/prop3/600/600",
+        "type": "album",
+        "cover": "https://picsum.photos/seed/prop3/600/600",
         "title": "手工饰品",
-        "date": "2026.05"
+        "count": 1,
+        "date": "2026.05",
+        "bts": "",
+        "photos": [
+          {
+            "src": "https://picsum.photos/seed/prop3/600/600",
+            "title": "手工饰品"
+          }
+        ]
       },
       {
-        "type": "image",
-        "src": "https://picsum.photos/seed/prop4/600/800",
+        "type": "album",
+        "cover": "https://picsum.photos/seed/prop4/600/800",
         "title": "场景道具",
-        "date": "2026.04"
+        "count": 1,
+        "date": "2026.04",
+        "bts": "",
+        "photos": [
+          {
+            "src": "https://picsum.photos/seed/prop4/600/800",
+            "title": "场景道具"
+          }
+        ]
       }
     ],
     "makeup": [
       {
-        "type": "image",
-        "src": "https://picsum.photos/seed/makeup1/600/900",
+        "type": "album",
+        "cover": "https://picsum.photos/seed/makeup1/600/900",
         "title": "新娘妆造",
-        "date": "2026.07"
+        "count": 1,
+        "date": "2026.07",
+        "bts": "",
+        "photos": [
+          {
+            "src": "https://picsum.photos/seed/makeup1/600/900",
+            "title": "新娘妆造"
+          }
+        ]
       },
       {
-        "type": "image",
-        "src": "https://picsum.photos/seed/makeup2/600/600",
+        "type": "album",
+        "cover": "https://picsum.photos/seed/makeup2/600/600",
         "title": "复古妆容",
-        "date": "2026.06"
+        "count": 1,
+        "date": "2026.06",
+        "bts": "",
+        "photos": [
+          {
+            "src": "https://picsum.photos/seed/makeup2/600/600",
+            "title": "复古妆容"
+          }
+        ]
       },
       {
-        "type": "image",
-        "src": "https://picsum.photos/seed/makeup3/600/800",
+        "type": "album",
+        "cover": "https://picsum.photos/seed/makeup3/600/800",
         "title": "清新裸妆",
-        "date": "2026.05"
+        "count": 1,
+        "date": "2026.05",
+        "bts": "",
+        "photos": [
+          {
+            "src": "https://picsum.photos/seed/makeup3/600/800",
+            "title": "清新裸妆"
+          }
+        ]
       },
       {
-        "type": "image",
-        "src": "https://picsum.photos/seed/makeup4/600/450",
+        "type": "album",
+        "cover": "https://picsum.photos/seed/makeup4/600/450",
         "title": "舞台妆",
-        "date": "2026.04"
+        "count": 1,
+        "date": "2026.04",
+        "bts": "",
+        "photos": [
+          {
+            "src": "https://picsum.photos/seed/makeup4/600/450",
+            "title": "舞台妆"
+          }
+        ]
       }
     ],
     "hair": [
       {
-        "type": "image",
-        "src": "https://picsum.photos/seed/hair1/600/800",
+        "type": "album",
+        "cover": "https://picsum.photos/seed/hair1/600/800",
         "title": "盘发造型",
-        "date": "2026.07"
+        "count": 1,
+        "date": "2026.07",
+        "bts": "",
+        "photos": [
+          {
+            "src": "https://picsum.photos/seed/hair1/600/800",
+            "title": "盘发造型"
+          }
+        ]
       },
       {
-        "type": "image",
-        "src": "https://picsum.photos/seed/hair2/600/600",
+        "type": "album",
+        "cover": "https://picsum.photos/seed/hair2/600/600",
         "title": "编发设计",
-        "date": "2026.06"
+        "count": 1,
+        "date": "2026.06",
+        "bts": "",
+        "photos": [
+          {
+            "src": "https://picsum.photos/seed/hair2/600/600",
+            "title": "编发设计"
+          }
+        ]
       },
       {
-        "type": "image",
-        "src": "https://picsum.photos/seed/hair3/600/900",
+        "type": "album",
+        "cover": "https://picsum.photos/seed/hair3/600/900",
         "title": "复古卷发",
-        "date": "2026.05"
+        "count": 1,
+        "date": "2026.05",
+        "bts": "",
+        "photos": [
+          {
+            "src": "https://picsum.photos/seed/hair3/600/900",
+            "title": "复古卷发"
+          }
+        ]
       },
       {
-        "type": "image",
-        "src": "https://picsum.photos/seed/hair4/600/450",
+        "type": "album",
+        "cover": "https://picsum.photos/seed/hair4/600/450",
         "title": "发饰搭配",
-        "date": "2026.04"
+        "count": 1,
+        "date": "2026.04",
+        "bts": "",
+        "photos": [
+          {
+            "src": "https://picsum.photos/seed/hair4/600/450",
+            "title": "发饰搭配"
+          }
+        ]
       }
     ]
   },
@@ -249,7 +383,7 @@
       },
       {
         "type": "album",
-        "cover": "",
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984722/shuyan/samples/hanfu/隋-翻荷髻/1",
         "title": "隋-翻荷髻",
         "count": 9,
         "date": "2026.07",
@@ -304,7 +438,7 @@
       },
       {
         "type": "album",
-        "cover": "",
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984779/shuyan/samples/hanfu/魏晋-荷花仙/1",
         "title": "魏晋-荷花仙",
         "count": 12,
         "date": "2026.03",
@@ -376,7 +510,7 @@
     "newchinese": [
       {
         "type": "album",
-        "cover": "",
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984825/shuyan/samples/newchinese/武侠-黑/1",
         "title": "武侠-黑",
         "count": 10,
         "date": "2026.06",
@@ -436,7 +570,7 @@
       },
       {
         "type": "album",
-        "cover": "",
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984859/shuyan/samples/newchinese/采茶女/1",
         "title": "采茶女",
         "count": 10,
         "date": "2026.02",
@@ -498,7 +632,7 @@
     "ethnic": [
       {
         "type": "album",
-        "cover": "",
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984910/shuyan/samples/ethnic/手推波旗袍-霍仙姑仿妆/1",
         "title": "手推波旗袍-霍仙姑仿妆",
         "count": 10,
         "date": "2026.04",
@@ -558,7 +692,7 @@
       },
       {
         "type": "album",
-        "cover": "",
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984947/shuyan/samples/ethnic/藏服/1",
         "title": "藏服",
         "count": 9,
         "date": "2026.05",
@@ -615,7 +749,7 @@
     "creative": [
       {
         "type": "album",
-        "cover": "",
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984977/shuyan/samples/creative/花间抱月/1",
         "title": "花间抱月",
         "count": 10,
         "date": "2026.05",
@@ -675,7 +809,7 @@
       },
       {
         "type": "album",
-        "cover": "",
+        "cover": "https://picsum.photos/seed/sa8-1/600/800",
         "title": "赛博朋克风",
         "count": 9,
         "date": "2026.01",

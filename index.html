@@ -1004,11 +1004,9 @@ function uploadAlbumPhotos() {
     if (valid.length === 0) return;
     var completed = 0;
     valid.forEach(function(file) {
-      var reader = new FileReader();
-      reader.onload = async function(ev) {
-        var imgSrc = await addWatermark(ev.target.result);
+      uploadImageWithWatermark(file).then(function(cloudUrl) {
         currentAlbum.album.photos.push({
-          src: imgSrc,
+          src: cloudUrl,
           title: file.name.replace(/\.[^.]+$/,''),
           date: new Date().getFullYear() + '.' + String(new Date().getMonth()+1).padStart(2,'0')
         });
@@ -1018,10 +1016,18 @@ function uploadAlbumPhotos() {
           renderAlbumPhotos();
           renderGallery(currentAlbum.type, currentAlbum.type === 'samples' ? currentSamplesTab : (currentAlbum.type === 'props' ? currentPropsTab : null));
           saveData();
-          showToast('成功添加 ' + valid.length + ' 张照片（已加水印）','success');
+          showToast('成功添加 ' + valid.length + ' 张照片到 Cloudinary（已加水印）','success');
         }
-      };
-      reader.readAsDataURL(file);
+      }).catch(function(err) {
+        showToast(file.name + ' 上传失败: ' + err.message,'error');
+        completed++;
+        if (completed === valid.length) {
+          currentAlbum.album.count = currentAlbum.album.photos.length;
+          renderAlbumPhotos();
+          renderGallery(currentAlbum.type, currentAlbum.type === 'samples' ? currentSamplesTab : (currentAlbum.type === 'props' ? currentPropsTab : null));
+          saveData();
+        }
+      });
     });
   };
   input.click();
@@ -1101,9 +1107,11 @@ function addWatermark(dataUrl) {
 // ===================== CLOUDINARY UPLOAD =====================
 function uploadToCloudinary(file, onProgress) {
   return new Promise(function(resolve, reject) {
+    var isImage = file.type.startsWith('image/');
+    var preset = isImage ? 'shuyan_unsigned_img' : 'shuyan_unsigned';
     var formData = new FormData();
     formData.append('file', file);
-    formData.append('upload_preset', 'shuyan_unsigned');
+    formData.append('upload_preset', preset);
     var xhr = new XMLHttpRequest();
     xhr.open('POST', 'https://api.cloudinary.com/v1_1/fi7vaama/auto/upload');
     xhr.upload.onprogress = function(e) {
@@ -1119,6 +1127,33 @@ function uploadToCloudinary(file, onProgress) {
     };
     xhr.onerror = function() { reject(new Error('Network error')); };
     xhr.send(formData);
+  });
+}
+function dataURLtoBlob(dataURL) {
+  var arr = dataURL.split(',');
+  var mime = arr[0].match(/:(.*?);/)[1];
+  var bstr = atob(arr[1]);
+  var n = bstr.length;
+  var u8 = new Uint8Array(n);
+  for (var i = 0; i < n; i++) u8[i] = bstr.charCodeAt(i);
+  return new Blob([u8], {type: mime});
+}
+function uploadImageWithWatermark(file, onProgress) {
+  return new Promise(function(resolve, reject) {
+    var reader = new FileReader();
+    reader.onload = async function(e) {
+      try {
+        var watermarkedDataURL = await addWatermark(e.target.result);
+        var blob = dataURLtoBlob(watermarkedDataURL);
+        var blobFile = new File([blob], file.name, {type: blob.type});
+        var cloudUrl = await uploadToCloudinary(blobFile, onProgress);
+        resolve(cloudUrl);
+      } catch(err) {
+        reject(err);
+      }
+    };
+    reader.onerror = function() { reject(new Error('读取文件失败')); };
+    reader.readAsDataURL(file);
   });
 }
 function getVideoThumb(videoUrl) {
@@ -1210,9 +1245,9 @@ function handleFiles(fileList,type) {
         }
       });
     } else {
-      const reader = new FileReader();
-      reader.onload = async (e) => {
-        var imgSrc = await addWatermark(e.target.result);
+      uploadImageWithWatermark(file, function(progress) {
+        if (barEl) barEl.style.width = ((completed + progress) / total * 100) + '%';
+      }).then(function(cloudUrl) {
         const now = new Date();
         const dateStr = now.getFullYear() + '.' + String(now.getMonth()+1).padStart(2,'0');
 
@@ -1222,7 +1257,7 @@ function handleFiles(fileList,type) {
             var albumTitle = file.name.replace(/\.[^.]+$/,'');
             var newAlbum = {
               type:'album',
-              cover:imgSrc,
+              cover:cloudUrl,
               title:albumTitle,
               count:0,
               date:dateStr,
@@ -1232,12 +1267,12 @@ function handleFiles(fileList,type) {
             targetArr.unshift(newAlbum);
           }
           var album = targetArr[0];
-          album.photos.push({src:imgSrc,title:file.name.replace(/\.[^.]+$/,'')});
+          album.photos.push({src:cloudUrl,title:file.name.replace(/\.[^.]+$/,'')});
           album.count = album.photos.length;
         } else {
           galleryData[type].unshift({
             type:'image',
-            src:imgSrc,
+            src:cloudUrl,
             title:file.name.replace(/\.[^.]+$/,''),
             date:dateStr
           });
@@ -1250,21 +1285,28 @@ function handleFiles(fileList,type) {
           renderGallery(type, type === 'props' ? currentPropsTab : (type === 'samples' ? currentSamplesTab : null));
           saveData();
           if (type === 'samples' || type === 'clients' || type === 'props') {
-            showToast('成功上传 ' + total + ' 张照片，已归为新相册（已加水印）','success');
+            showToast('成功上传 ' + total + ' 张照片到 Cloudinary（已加水印）','success');
           } else {
-            showToast('成功上传 ' + total + ' 张图片（已加水印）','success');
+            showToast('成功上传 ' + total + ' 张图片到 Cloudinary（已加水印）','success');
           }
           setTimeout(() => {
             if (progressEl) progressEl.classList.remove('upload-zone__progress--active');
             if (barEl) barEl.style.width = '0';
           },500);
         }
-      };
-      reader.onerror = () => {
-        showToast('读取 ' + file.name + ' 失败','error');
+      }).catch(function(err) {
+        showToast(file.name + ' 上传失败: ' + err.message,'error');
         completed++;
-      };
-      reader.readAsDataURL(file);
+        if (barEl) barEl.style.width = (completed / total * 100) + '%';
+        if (completed === total) {
+          renderGallery(type, type === 'props' ? currentPropsTab : (type === 'samples' ? currentSamplesTab : null));
+          saveData();
+          setTimeout(() => {
+            if (progressEl) progressEl.classList.remove('upload-zone__progress--active');
+            if (barEl) barEl.style.width = '0';
+          },500);
+        }
+      });
     }
   });
 }
@@ -1456,7 +1498,7 @@ function exportData() {
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
-    showToast('数据已导出！请将 gallery-data.json 文件发送给我，我会嵌入网站后重新部署','success');
+    showToast('数据已导出！请将 gallery-data.json 复制为 gallery-config.json 并推送到 GitHub','success');
   } catch(e) {
     showToast('导出失败: ' + e.message, 'error');
   }
