@@ -441,15 +441,61 @@
     "newchinese": [
       {
         "type": "album",
-        "cover": "https://picsum.photos/seed/sa2-9/600/800",
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072124/ka3ur0bkgsiwdkwwbmkz.jpg",
         "title": "武侠-黑",
-        "count": 1,
+        "count": 10,
         "date": "2026.06",
         "bts": "https://res.cloudinary.com/fi7vaama/video/upload/f_auto,q_auto/v1785896838/shuyan/samples/newchinese/新中式/bts",
         "photos": [
           {
-            "src": "https://picsum.photos/seed/sa2-9/600/800",
-            "title": "新中式 9"
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072124/ka3ur0bkgsiwdkwwbmkz.jpg",
+            "title": "DSCF1949",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072128/qjmgm30xeevwb5f43kni.jpg",
+            "title": "DSCF2012",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072125/t1vrkjhjvroououev6gj.jpg",
+            "title": "DSCF2011",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072125/rvdhzynbrtrctja7qwc8.jpg",
+            "title": "DSCF1963",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072116/k2nivbxpvbxfb0tjekao.jpg",
+            "title": "DSCF2002",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072115/bpl4txx2y6elubswsy4c.jpg",
+            "title": "DSCF1975",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072126/pv0vyjwn9uowdxdfiwym.jpg",
+            "title": "DSCF2031",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072129/zlj4mluv7stagdxccpw5.jpg",
+            "title": "DSCF1981",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072132/iuelhwbh7bxa4drfyx1c.jpg",
+            "title": "DSCF2032",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072137/glq2i0ujwspjgzo59sfi.jpg",
+            "title": "DSCF2054",
+            "date": "2026.08"
           }
         ]
       },
@@ -582,47 +628,56 @@
       },
       {
         "type": "album",
-        "cover": "https://picsum.photos/seed/sa7-1/600/800",
-        "title": "朝鲜族风情",
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072243/a7x9mixo1tnveekui4yu.jpg",
+        "title": "藏服",
         "count": 9,
         "date": "2026.05",
-        "bts": "",
+        "bts": "https://res.cloudinary.com/fi7vaama/video/upload/v1786072313/wekrj1hwg2fso9nkuteb.mov",
         "photos": [
           {
-            "src": "https://picsum.photos/seed/sa7-1/600/800",
-            "title": "朝鲜族风情 1"
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072243/a7x9mixo1tnveekui4yu.jpg",
+            "title": "DSCF1893",
+            "date": "2026.08"
           },
           {
-            "src": "https://picsum.photos/seed/sa7-2/600/800",
-            "title": "朝鲜族风情 2"
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072238/fmg7odiialufjfqbd1yz.jpg",
+            "title": "DSCF1892",
+            "date": "2026.08"
           },
           {
-            "src": "https://picsum.photos/seed/sa7-3/600/800",
-            "title": "朝鲜族风情 3"
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072241/qon194znyz1j8eu5crl1.jpg",
+            "title": "DSCF1933",
+            "date": "2026.08"
           },
           {
-            "src": "https://picsum.photos/seed/sa7-4/600/800",
-            "title": "朝鲜族风情 4"
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072249/cc0v8zasxgrcfibj1lad.jpg",
+            "title": "DSCF1890",
+            "date": "2026.08"
           },
           {
-            "src": "https://picsum.photos/seed/sa7-5/600/800",
-            "title": "朝鲜族风情 5"
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072253/rp2kejkicpy5ruxdqyu2.jpg",
+            "title": "DSCF1928",
+            "date": "2026.08"
           },
           {
-            "src": "https://picsum.photos/seed/sa7-6/600/800",
-            "title": "朝鲜族风情 6"
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072254/gyppghldfvleka2jkltr.jpg",
+            "title": "DSCF1914",
+            "date": "2026.08"
           },
           {
-            "src": "https://picsum.photos/seed/sa7-7/600/800",
-            "title": "朝鲜族风情 7"
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072254/eghvrvld98ijmtdexphn.jpg",
+            "title": "DSCF1900",
+            "date": "2026.08"
           },
           {
-            "src": "https://picsum.photos/seed/sa7-8/600/800",
-            "title": "朝鲜族风情 8"
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072255/qkbmzfgsghmaqz4fznyu.jpg",
+            "title": "DSCF1915",
+            "date": "2026.08"
           },
           {
-            "src": "https://picsum.photos/seed/sa7-9/600/800",
-            "title": "朝鲜族风情 9"
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072254/swfolu5y7folngir1p5d.jpg",
+            "title": "DSCF1924",
+            "date": "2026.08"
           }
         ]
       }
@@ -630,9 +685,65 @@
     "creative": [
       {
         "type": "album",
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072548/pojxue9yrj8eanar71fy.jpg",
+        "title": "花间抱月",
+        "count": 10,
+        "date": "2026.08",
+        "bts": "",
+        "photos": [
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072548/pojxue9yrj8eanar71fy.jpg",
+            "title": "DSCF6787",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072549/kez1s34aotif0ndlo7ta.jpg",
+            "title": "DSCF6875",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072401/hs17pourp5erwekrdpbb.jpg",
+            "title": "DSCF6948"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072403/ht2jfe1ich7fbupvxcgn.jpg",
+            "title": "DSCF6953"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072403/bpnpnbqrhmmhzy9sk0ma.jpg",
+            "title": "DSCF6971"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072400/zhwtcrnamnbomcl1wno4.jpg",
+            "title": "DSCF6750"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072541/qakylzek9mh66sjo7lbk.jpg",
+            "title": "DSCF6762",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072542/ub1f3vetcd2q8pqwnqr2.jpg",
+            "title": "DSCF6784",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072549/tsjfkmnddpjcdkohu93c.jpg",
+            "title": "DSCF6835",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072549/gkig0lpg6jsqugimhqke.jpg",
+            "title": "DSCF6912",
+            "date": "2026.08"
+          }
+        ]
+      },
+      {
+        "type": "album",
         "cover": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071683/puhbx6kqptgl55rcafvm.jpg",
         "title": "贵妃",
-        "count": 7,
+        "count": 12,
         "date": "2026.08",
         "bts": "",
         "photos": [
@@ -663,6 +774,26 @@
           {
             "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071694/bzhps7motq03txc9i6ug.jpg",
             "title": "DSCF0330"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072388/u1kulw0ehwssxtm3kedq.jpg",
+            "title": "DSCF6762"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072393/pmlkkk0moxhvdjhswqr6.jpg",
+            "title": "DSCF6784"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072393/kvnvusmho96noltx8pbo.jpg",
+            "title": "DSCF6912"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072396/cipiqrxim3ol4zk6abiv.jpg",
+            "title": "DSCF6787"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786072397/azzvgcprezlteyowdi3z.jpg",
+            "title": "DSCF6835"
           }
         ]
       },
