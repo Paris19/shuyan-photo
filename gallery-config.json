@@ -3,35 +3,36 @@
     "costume": [
       {
         "type": "album",
-        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/v1785992818/n8joaqo3xy4ylzq1tfzv.jpg",
-        "title": "白色婚纱",
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994158/kw3kqy8nvcmvugzrlty5.jpg",
+        "title": "汉服",
         "count": 2,
         "date": "2026.07",
         "bts": "",
         "photos": [
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1785992818/n8joaqo3xy4ylzq1tfzv.jpg",
-            "title": "IMG_6801",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994158/kw3kqy8nvcmvugzrlty5.jpg",
+            "title": "IMG_6802",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1785992819/nmheocxjpa6r2s6yqgwa.jpg",
-            "title": "IMG_6802",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994156/fvjipbweau7fkqmigmij.jpg",
+            "title": "IMG_6801",
             "date": "2026.08"
           }
         ]
       },
       {
         "type": "album",
-        "cover": "https://picsum.photos/seed/costume2/600/450",
-        "title": "复古旗袍",
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994295/szrrjvgw6iszs58r4whi.jpg",
+        "title": "旗袍",
         "count": 1,
         "date": "2026.06",
         "bts": "",
         "photos": [
           {
-            "src": "https://picsum.photos/seed/costume2/600/450",
-            "title": "复古旗袍"
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994295/szrrjvgw6iszs58r4whi.jpg",
+            "title": "IMG_6823",
+            "date": "2026.08"
           }
         ]
       },
@@ -67,15 +68,16 @@
     "prop": [
       {
         "type": "album",
-        "cover": "https://picsum.photos/seed/prop1/600/800",
-        "title": "复古道具",
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994330/ycwjl1pxwoijlec0d7cg.jpg",
+        "title": "道具",
         "count": 1,
         "date": "2026.07",
         "bts": "",
         "photos": [
           {
-            "src": "https://picsum.photos/seed/prop1/600/800",
-            "title": "复古道具"
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994330/ycwjl1pxwoijlec0d7cg.jpg",
+            "title": "4",
+            "date": "2026.08"
           }
         ]
       },
@@ -125,15 +127,16 @@
     "makeup": [
       {
         "type": "album",
-        "cover": "https://picsum.photos/seed/makeup1/600/900",
-        "title": "新娘妆造",
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994413/yhd9ajr89wgpdbbzlu71.jpg",
+        "title": "汉服妆造",
         "count": 1,
         "date": "2026.07",
         "bts": "",
         "photos": [
           {
-            "src": "https://picsum.photos/seed/makeup1/600/900",
-            "title": "新娘妆造"
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994413/yhd9ajr89wgpdbbzlu71.jpg",
+            "title": "1",
+            "date": "2026.08"
           }
         ]
       },
@@ -183,15 +186,16 @@
     "hair": [
       {
         "type": "album",
-        "cover": "https://picsum.photos/seed/hair1/600/800",
-        "title": "盘发造型",
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994455/ttukqpoaen6lrtiqd2ki.jpg",
+        "title": "手推波造型",
         "count": 1,
         "date": "2026.07",
         "bts": "",
         "photos": [
           {
-            "src": "https://picsum.photos/seed/hair1/600/800",
-            "title": "盘发造型"
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994455/ttukqpoaen6lrtiqd2ki.jpg",
+            "title": "DSC_0434-已增强-降噪-1",
+            "date": "2026.08"
           }
         ]
       },
@@ -243,264 +247,191 @@
     "hanfu": [
       {
         "type": "album",
-        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984636/shuyan/samples/hanfu/唐-杨贵妃仿妆/1",
-        "title": "唐-杨贵妃仿妆",
-        "count": 14,
-        "date": "2026.08",
-        "bts": "https://res.cloudinary.com/fi7vaama/video/upload/f_auto,q_auto/v1785918318/shuyan/samples/hanfu/唐-杨贵妃仿妆/bts",
-        "photos": [
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984636/shuyan/samples/hanfu/唐-杨贵妃仿妆/1",
-            "title": "DSCF0258",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984639/shuyan/samples/hanfu/唐-杨贵妃仿妆/2",
-            "title": "DSCF0284",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984642/shuyan/samples/hanfu/唐-杨贵妃仿妆/3",
-            "title": "DSCF0198",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984646/shuyan/samples/hanfu/唐-杨贵妃仿妆/4",
-            "title": "DSCF0186",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984650/shuyan/samples/hanfu/唐-杨贵妃仿妆/5",
-            "title": "DSCF0252",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984654/shuyan/samples/hanfu/唐-杨贵妃仿妆/6",
-            "title": "DSCF0280",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984659/shuyan/samples/hanfu/唐-杨贵妃仿妆/7",
-            "title": "DSCF0268",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984663/shuyan/samples/hanfu/唐-杨贵妃仿妆/8",
-            "title": "DSCF0278",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984666/shuyan/samples/hanfu/唐-杨贵妃仿妆/9",
-            "title": "DSCF0295",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984670/shuyan/samples/hanfu/唐-杨贵妃仿妆/10",
-            "title": "DSCF0177",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984675/shuyan/samples/hanfu/唐-杨贵妃仿妆/11",
-            "title": "DSCF0116",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984679/shuyan/samples/hanfu/唐-杨贵妃仿妆/12",
-            "title": "DSCF0228",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984683/shuyan/samples/hanfu/唐-杨贵妃仿妆/13",
-            "title": "DSCF0307",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984688/shuyan/samples/hanfu/唐-杨贵妃仿妆/14",
-            "title": "DSCF0330",
-            "date": "2026.08"
-          }
-        ]
-      },
-      {
-        "type": "album",
-        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984691/shuyan/samples/hanfu/魏晋-清冷风/1",
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896740/shuyan/samples/hanfu/魏晋-清冷风/1",
         "title": "魏晋-清冷风",
-        "count": 10,
+        "count": 13,
         "date": "2026.08",
         "bts": "https://res.cloudinary.com/fi7vaama/video/upload/f_auto,q_auto/v1785896762/shuyan/samples/hanfu/魏晋-清冷风/bts",
         "photos": [
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984691/shuyan/samples/hanfu/魏晋-清冷风/1",
-            "title": "DSCF4809",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896740/shuyan/samples/hanfu/魏晋-清冷风/1",
+            "title": "DSCF4809"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896742/shuyan/samples/hanfu/魏晋-清冷风/2",
+            "title": "DSCF4757"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896744/shuyan/samples/hanfu/魏晋-清冷风/3",
+            "title": "DSCF4740"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896746/shuyan/samples/hanfu/魏晋-清冷风/4",
+            "title": "DSCF4781"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896748/shuyan/samples/hanfu/魏晋-清冷风/5",
+            "title": "DSCF4801"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896750/shuyan/samples/hanfu/魏晋-清冷风/6",
+            "title": "DSCF4804"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896752/shuyan/samples/hanfu/魏晋-清冷风/7",
+            "title": "DSCF4826"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896754/shuyan/samples/hanfu/魏晋-清冷风/8",
+            "title": "DSCF4870 1"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896757/shuyan/samples/hanfu/魏晋-清冷风/9",
+            "title": "DSCF4934"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896759/shuyan/samples/hanfu/魏晋-清冷风/10",
+            "title": "DSCF4914",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984694/shuyan/samples/hanfu/魏晋-清冷风/2",
-            "title": "DSCF4781",
-            "date": "2026.08"
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071659/amamtsnfefbkmaos6amr.jpg",
+            "title": "DSCF0177"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984697/shuyan/samples/hanfu/魏晋-清冷风/3",
-            "title": "DSCF4914 1",
-            "date": "2026.08"
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071670/pfzpo2njvqjo665dlwdj.jpg",
+            "title": "DSCF0284"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984699/shuyan/samples/hanfu/魏晋-清冷风/4",
-            "title": "DSCF4826",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984701/shuyan/samples/hanfu/魏晋-清冷风/5",
-            "title": "DSCF4934 1",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984705/shuyan/samples/hanfu/魏晋-清冷风/6",
-            "title": "DSCF4740",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984708/shuyan/samples/hanfu/魏晋-清冷风/7",
-            "title": "DSCF4804",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984711/shuyan/samples/hanfu/魏晋-清冷风/8",
-            "title": "DSCF4757 1",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984714/shuyan/samples/hanfu/魏晋-清冷风/9",
-            "title": "DSCF4801",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984717/shuyan/samples/hanfu/魏晋-清冷风/10",
-            "title": "DSCF4870 1",
-            "date": "2026.08"
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071671/m30pereclxlefonv7ihk.jpg",
+            "title": "DSCF0252"
           }
         ]
       },
       {
         "type": "album",
-        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984722/shuyan/samples/hanfu/隋-翻荷髻/1",
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896767/shuyan/samples/hanfu/隋-翻荷髻/1",
         "title": "隋-翻荷髻",
-        "count": 9,
+        "count": 10,
         "date": "2026.07",
         "bts": "https://res.cloudinary.com/fi7vaama/video/upload/f_auto,q_auto/v1785896803/shuyan/samples/hanfu/隋-翻荷髻/bts",
         "photos": [
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984722/shuyan/samples/hanfu/隋-翻荷髻/1",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896767/shuyan/samples/hanfu/隋-翻荷髻/1",
             "title": "DSCF1487",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984730/shuyan/samples/hanfu/隋-翻荷髻/2",
-            "title": "DSCF1328",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984736/shuyan/samples/hanfu/隋-翻荷髻/3",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896771/shuyan/samples/hanfu/隋-翻荷髻/2",
             "title": "DSCF1420",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984742/shuyan/samples/hanfu/隋-翻荷髻/4",
-            "title": "DSCF1506",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896775/shuyan/samples/hanfu/隋-翻荷髻/3",
+            "title": "DSCF1422",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984748/shuyan/samples/hanfu/隋-翻荷髻/5",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896779/shuyan/samples/hanfu/隋-翻荷髻/4",
             "title": "DSCF1463",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984756/shuyan/samples/hanfu/隋-翻荷髻/6",
-            "title": "DSCF1632_2026-07-08-23-10-11-693_创意图",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896783/shuyan/samples/hanfu/隋-翻荷髻/5",
+            "title": "DSCF1506",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984763/shuyan/samples/hanfu/隋-翻荷髻/7",
-            "title": "DSCF1460",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984769/shuyan/samples/hanfu/隋-翻荷髻/8",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896786/shuyan/samples/hanfu/隋-翻荷髻/6",
             "title": "DSCF1542",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984776/shuyan/samples/hanfu/隋-翻荷髻/9",
-            "title": "DSCF1422",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896790/shuyan/samples/hanfu/隋-翻荷髻/7",
+            "title": "DSCF1632_2026-07-08-23-10-11-693_创意图",
             "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896794/shuyan/samples/hanfu/隋-翻荷髻/8",
+            "title": "DSCF1328",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896798/shuyan/samples/hanfu/隋-翻荷髻/9",
+            "title": "DSCF1460",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896799/shuyan/samples/hanfu/隋-翻荷髻/10",
+            "title": "DSCF4914"
           }
         ]
       },
       {
         "type": "album",
-        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984779/shuyan/samples/hanfu/魏晋-荷花仙/1",
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896807/shuyan/samples/hanfu/魏晋-荷花仙/1",
         "title": "魏晋-荷花仙",
         "count": 12,
         "date": "2026.03",
-        "bts": "https://res.cloudinary.com/fi7vaama/video/upload/f_auto,q_auto/v1785918327/shuyan/samples/hanfu/魏晋-荷花仙/bts",
+        "bts": "",
         "photos": [
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984779/shuyan/samples/hanfu/魏晋-荷花仙/1",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896807/shuyan/samples/hanfu/魏晋-荷花仙/1",
             "title": "DSCF0927",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984782/shuyan/samples/hanfu/魏晋-荷花仙/2",
-            "title": "DSCF0940",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984785/shuyan/samples/hanfu/魏晋-荷花仙/3",
-            "title": "DSCF1004",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984788/shuyan/samples/hanfu/魏晋-荷花仙/4",
-            "title": "DSCF1169",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984791/shuyan/samples/hanfu/魏晋-荷花仙/5",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896809/shuyan/samples/hanfu/魏晋-荷花仙/2",
             "title": "DSCF0919",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984794/shuyan/samples/hanfu/魏晋-荷花仙/6",
-            "title": "DSCF1178",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896811/shuyan/samples/hanfu/魏晋-荷花仙/3",
+            "title": "DSCF0940",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984798/shuyan/samples/hanfu/魏晋-荷花仙/7",
-            "title": "DSCF1066",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896814/shuyan/samples/hanfu/魏晋-荷花仙/4",
+            "title": "DSCF1004",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984802/shuyan/samples/hanfu/魏晋-荷花仙/8",
-            "title": "DSCF1030",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984805/shuyan/samples/hanfu/魏晋-荷花仙/9",
-            "title": "DSCF1032",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984810/shuyan/samples/hanfu/魏晋-荷花仙/10",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896816/shuyan/samples/hanfu/魏晋-荷花仙/5",
             "title": "DSCF1009",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984815/shuyan/samples/hanfu/魏晋-荷花仙/11",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896818/shuyan/samples/hanfu/魏晋-荷花仙/6",
+            "title": "DSCF1030",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896821/shuyan/samples/hanfu/魏晋-荷花仙/7",
+            "title": "DSCF1032",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896823/shuyan/samples/hanfu/魏晋-荷花仙/8",
+            "title": "DSCF1066",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896825/shuyan/samples/hanfu/魏晋-荷花仙/9",
+            "title": "DSCF1169",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896827/shuyan/samples/hanfu/魏晋-荷花仙/10",
+            "title": "DSCF1178",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896829/shuyan/samples/hanfu/魏晋-荷花仙/11",
             "title": "DSCF1089",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984821/shuyan/samples/hanfu/魏晋-荷花仙/12",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896832/shuyan/samples/hanfu/魏晋-荷花仙/12",
             "title": "DSCF1151",
             "date": "2026.08"
           }
@@ -510,120 +441,79 @@
     "newchinese": [
       {
         "type": "album",
-        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984825/shuyan/samples/newchinese/武侠-黑/1",
+        "cover": "https://picsum.photos/seed/sa2-9/600/800",
         "title": "武侠-黑",
-        "count": 10,
+        "count": 1,
         "date": "2026.06",
         "bts": "https://res.cloudinary.com/fi7vaama/video/upload/f_auto,q_auto/v1785896838/shuyan/samples/newchinese/新中式/bts",
         "photos": [
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984825/shuyan/samples/newchinese/武侠-黑/1",
-            "title": "DSCF1949",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984827/shuyan/samples/newchinese/武侠-黑/2",
-            "title": "DSCF2012",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984831/shuyan/samples/newchinese/武侠-黑/3",
-            "title": "DSCF2054",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984836/shuyan/samples/newchinese/武侠-黑/4",
-            "title": "DSCF2032",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984839/shuyan/samples/newchinese/武侠-黑/5",
-            "title": "DSCF1981",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984843/shuyan/samples/newchinese/武侠-黑/6",
-            "title": "DSCF2031",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984846/shuyan/samples/newchinese/武侠-黑/7",
-            "title": "DSCF2002",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984848/shuyan/samples/newchinese/武侠-黑/8",
-            "title": "DSCF1975",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984851/shuyan/samples/newchinese/武侠-黑/9",
-            "title": "DSCF2011",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984854/shuyan/samples/newchinese/武侠-黑/10",
-            "title": "DSCF1963",
-            "date": "2026.08"
+            "src": "https://picsum.photos/seed/sa2-9/600/800",
+            "title": "新中式 9"
           }
         ]
       },
       {
         "type": "album",
-        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984859/shuyan/samples/newchinese/采茶女/1",
-        "title": "采茶女",
-        "count": 10,
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071771/v5gvzllwlijhfwzikdm0.jpg",
+        "title": "春日茶信",
+        "count": 11,
         "date": "2026.02",
         "bts": "",
         "photos": [
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984859/shuyan/samples/newchinese/采茶女/1",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071771/v5gvzllwlijhfwzikdm0.jpg",
             "title": "1",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984863/shuyan/samples/newchinese/采茶女/2",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071781/qmstpjg5teqq9gwpxvig.jpg",
             "title": "2",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984867/shuyan/samples/newchinese/采茶女/3",
-            "title": "5",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984873/shuyan/samples/newchinese/采茶女/4",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071787/gwaik8t2flqitgpqeehe.jpg",
             "title": "7",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984877/shuyan/samples/newchinese/采茶女/5",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071787/nxwowfklehvw3uxxkg5l.jpg",
             "title": "3",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984884/shuyan/samples/newchinese/采茶女/6",
-            "title": "9",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071789/khi7bdyd84asd1ge2m3d.jpg",
+            "title": "5",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984889/shuyan/samples/newchinese/采茶女/7",
-            "title": "12",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984893/shuyan/samples/newchinese/采茶女/8",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071791/khn2vro1i5encaqia0ga.jpg",
             "title": "6",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984899/shuyan/samples/newchinese/采茶女/9",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071791/pc8ngsz2tdj3bgm8qfjp.jpg",
             "title": "4",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984905/shuyan/samples/newchinese/采茶女/10",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071802/v4vzbvnqe6o06vrsjdbh.jpg",
+            "title": "9",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071803/nb8rrb8elxn1mpz7rgux.jpg",
             "title": "11",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071805/quscje2xwhmww5ezsiua.jpg",
+            "title": "10",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071807/hdk8t8azerx7xlgvvcqq.jpg",
+            "title": "12",
             "date": "2026.08"
           }
         ]
@@ -632,59 +522,59 @@
     "ethnic": [
       {
         "type": "album",
-        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984910/shuyan/samples/ethnic/手推波旗袍-霍仙姑仿妆/1",
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896841/shuyan/samples/ethnic/霍仙姑仿妆/1",
         "title": "手推波旗袍-霍仙姑仿妆",
         "count": 10,
         "date": "2026.04",
         "bts": "https://res.cloudinary.com/fi7vaama/video/upload/f_auto,q_auto/v1785896879/shuyan/samples/ethnic/霍仙姑仿妆/bts",
         "photos": [
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984910/shuyan/samples/ethnic/手推波旗袍-霍仙姑仿妆/1",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896841/shuyan/samples/ethnic/霍仙姑仿妆/1",
             "title": "DSC_0434-已增强-降噪-1",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984914/shuyan/samples/ethnic/手推波旗袍-霍仙姑仿妆/2",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896845/shuyan/samples/ethnic/霍仙姑仿妆/2",
             "title": "DSC_0233-已增强-降噪-1",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984916/shuyan/samples/ethnic/手推波旗袍-霍仙姑仿妆/3",
-            "title": "DSC_0298-已增强-降噪-1",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984920/shuyan/samples/ethnic/手推波旗袍-霍仙姑仿妆/4",
-            "title": "DSC_0348-已增强-降噪-1",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984924/shuyan/samples/ethnic/手推波旗袍-霍仙姑仿妆/5",
-            "title": "DSC_0506-已增强-降噪-1",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984929/shuyan/samples/ethnic/手推波旗袍-霍仙姑仿妆/6",
-            "title": "DSC_0547-已增强-降噪-1",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984933/shuyan/samples/ethnic/手推波旗袍-霍仙姑仿妆/7",
-            "title": "DSC_0354-已增强-降噪-1",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984937/shuyan/samples/ethnic/手推波旗袍-霍仙姑仿妆/8",
-            "title": "DSC_0523-已增强-降噪-1",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984941/shuyan/samples/ethnic/手推波旗袍-霍仙姑仿妆/9",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896849/shuyan/samples/ethnic/霍仙姑仿妆/3",
             "title": "DSC_0553-已增强-降噪-1",
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984945/shuyan/samples/ethnic/手推波旗袍-霍仙姑仿妆/10",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896853/shuyan/samples/ethnic/霍仙姑仿妆/4",
+            "title": "DSC_0298-已增强-降噪-1",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896856/shuyan/samples/ethnic/霍仙姑仿妆/5",
+            "title": "DSC_0348-已增强-降噪-1",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896860/shuyan/samples/ethnic/霍仙姑仿妆/6",
+            "title": "DSC_0354-已增强-降噪-1",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896864/shuyan/samples/ethnic/霍仙姑仿妆/7",
+            "title": "DSC_0506-已增强-降噪-1",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896868/shuyan/samples/ethnic/霍仙姑仿妆/8",
+            "title": "DSC_0547-已增强-降噪-1",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896872/shuyan/samples/ethnic/霍仙姑仿妆/9",
+            "title": "DSC_0523-已增强-降噪-1",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785896875/shuyan/samples/ethnic/霍仙姑仿妆/10",
             "title": "DSC_0569-已增强-降噪-1",
             "date": "2026.08"
           }
@@ -692,56 +582,47 @@
       },
       {
         "type": "album",
-        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984947/shuyan/samples/ethnic/藏服/1",
-        "title": "藏服",
+        "cover": "https://picsum.photos/seed/sa7-1/600/800",
+        "title": "朝鲜族风情",
         "count": 9,
         "date": "2026.05",
-        "bts": "https://res.cloudinary.com/fi7vaama/video/upload/f_auto,q_auto/v1785918409/shuyan/samples/ethnic/藏服/bts",
+        "bts": "",
         "photos": [
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984947/shuyan/samples/ethnic/藏服/1",
-            "title": "DSCF1893",
-            "date": "2026.08"
+            "src": "https://picsum.photos/seed/sa7-1/600/800",
+            "title": "朝鲜族风情 1"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984950/shuyan/samples/ethnic/藏服/2",
-            "title": "DSCF1892",
-            "date": "2026.08"
+            "src": "https://picsum.photos/seed/sa7-2/600/800",
+            "title": "朝鲜族风情 2"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984954/shuyan/samples/ethnic/藏服/3",
-            "title": "DSCF1890",
-            "date": "2026.08"
+            "src": "https://picsum.photos/seed/sa7-3/600/800",
+            "title": "朝鲜族风情 3"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984956/shuyan/samples/ethnic/藏服/4",
-            "title": "DSCF1933",
-            "date": "2026.08"
+            "src": "https://picsum.photos/seed/sa7-4/600/800",
+            "title": "朝鲜族风情 4"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984959/shuyan/samples/ethnic/藏服/5",
-            "title": "DSCF1924",
-            "date": "2026.08"
+            "src": "https://picsum.photos/seed/sa7-5/600/800",
+            "title": "朝鲜族风情 5"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984963/shuyan/samples/ethnic/藏服/6",
-            "title": "DSCF1914",
-            "date": "2026.08"
+            "src": "https://picsum.photos/seed/sa7-6/600/800",
+            "title": "朝鲜族风情 6"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984966/shuyan/samples/ethnic/藏服/7",
-            "title": "DSCF1915",
-            "date": "2026.08"
+            "src": "https://picsum.photos/seed/sa7-7/600/800",
+            "title": "朝鲜族风情 7"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984970/shuyan/samples/ethnic/藏服/8",
-            "title": "DSCF1900",
-            "date": "2026.08"
+            "src": "https://picsum.photos/seed/sa7-8/600/800",
+            "title": "朝鲜族风情 8"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984974/shuyan/samples/ethnic/藏服/9",
-            "title": "DSCF1928",
-            "date": "2026.08"
+            "src": "https://picsum.photos/seed/sa7-9/600/800",
+            "title": "朝鲜族风情 9"
           }
         ]
       }
@@ -749,61 +630,101 @@
     "creative": [
       {
         "type": "album",
-        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984977/shuyan/samples/creative/花间抱月/1",
-        "title": "花间抱月",
-        "count": 10,
+        "cover": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071683/puhbx6kqptgl55rcafvm.jpg",
+        "title": "贵妃",
+        "count": 7,
+        "date": "2026.08",
+        "bts": "",
+        "photos": [
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071683/puhbx6kqptgl55rcafvm.jpg",
+            "title": "DSCF0116"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071684/ywicydrbqhgievbzjgfh.jpg",
+            "title": "DSCF0280"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071687/rrwllnbf67yzwbnmtujx.jpg",
+            "title": "DSCF0278"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071689/opn7tbx3odywytzjxox6.jpg",
+            "title": "DSCF0186"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071690/vqkpqddz96ii3ptjh91f.jpg",
+            "title": "DSCF0268"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071692/uyy0tenihwtj1ej0mxhx.jpg",
+            "title": "DSCF0307"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071694/bzhps7motq03txc9i6ug.jpg",
+            "title": "DSCF0330"
+          }
+        ]
+      },
+      {
+        "type": "album",
+        "cover": "https://picsum.photos/seed/sa3-1/600/800",
+        "title": "副机位婚礼作品",
+        "count": 13,
         "date": "2026.05",
         "bts": "",
         "photos": [
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984977/shuyan/samples/creative/花间抱月/1",
-            "title": "DSCF6787",
-            "date": "2026.08"
+            "src": "https://picsum.photos/seed/sa3-1/600/800",
+            "title": "婚礼作品 1"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984980/shuyan/samples/creative/花间抱月/2",
-            "title": "DSCF6762",
-            "date": "2026.08"
+            "src": "https://picsum.photos/seed/sa3-2/600/800",
+            "title": "婚礼作品 2"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984983/shuyan/samples/creative/花间抱月/3",
-            "title": "DSCF6948",
-            "date": "2026.08"
+            "src": "https://picsum.photos/seed/sa3-3/600/800",
+            "title": "婚礼作品 3"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984986/shuyan/samples/creative/花间抱月/4",
-            "title": "DSCF6784",
-            "date": "2026.08"
+            "src": "https://picsum.photos/seed/sa3-4/600/800",
+            "title": "婚礼作品 4"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984990/shuyan/samples/creative/花间抱月/5",
-            "title": "DSCF6750",
-            "date": "2026.08"
+            "src": "https://picsum.photos/seed/sa3-5/600/800",
+            "title": "婚礼作品 5"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984993/shuyan/samples/creative/花间抱月/6",
-            "title": "DSCF6912",
-            "date": "2026.08"
+            "src": "https://picsum.photos/seed/sa3-6/600/800",
+            "title": "婚礼作品 6"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785984997/shuyan/samples/creative/花间抱月/7",
-            "title": "DSCF6875",
-            "date": "2026.08"
+            "src": "https://picsum.photos/seed/sa3-7/600/800",
+            "title": "婚礼作品 7"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785985000/shuyan/samples/creative/花间抱月/8",
-            "title": "DSCF6835",
-            "date": "2026.08"
+            "src": "https://picsum.photos/seed/sa3-8/600/800",
+            "title": "婚礼作品 8"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785985004/shuyan/samples/creative/花间抱月/9",
-            "title": "DSCF6953",
-            "date": "2026.08"
+            "src": "https://picsum.photos/seed/sa3-9/600/800",
+            "title": "婚礼作品 9"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/f_auto,q_auto/v1785985008/shuyan/samples/creative/花间抱月/10",
-            "title": "DSCF6971",
-            "date": "2026.08"
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071667/db3mt005tirnxkzb7ydr.jpg",
+            "title": "DSCF0198"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071672/szx1jynqa86pjglhwjp7.jpg",
+            "title": "DSCF0228"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071672/t9sfqeaxywskh9cjpqt0.jpg",
+            "title": "DSCF0295"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786071679/s8h8xhf1n83x0qlkywzn.jpg",
+            "title": "DSCF0258"
           }
         ]
       },
@@ -858,47 +779,56 @@
   "clients": [
     {
       "type": "album",
-      "cover": "https://picsum.photos/seed/ca1-1/600/800",
-      "title": "林小姐的婚礼",
+      "cover": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994527/x6r2ct4dxqseyx6pzmkj.jpg",
+      "title": "武侠",
       "count": 9,
       "date": "2026.07",
       "bts": "",
       "photos": [
         {
-          "src": "https://picsum.photos/seed/ca1-1/600/800",
-          "title": "林小姐的婚礼 1"
+          "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994527/x6r2ct4dxqseyx6pzmkj.jpg",
+          "title": "DSCF2012",
+          "date": "2026.08"
         },
         {
-          "src": "https://picsum.photos/seed/ca1-2/600/800",
-          "title": "林小姐的婚礼 2"
+          "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994520/fzbgwve0zav0vhw3aagh.jpg",
+          "title": "DSCF1975",
+          "date": "2026.08"
         },
         {
-          "src": "https://picsum.photos/seed/ca1-3/600/800",
-          "title": "林小姐的婚礼 3"
+          "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994521/d8hrvymy4b3awfbv0y8v.jpg",
+          "title": "DSCF1949",
+          "date": "2026.08"
         },
         {
-          "src": "https://picsum.photos/seed/ca1-4/600/800",
-          "title": "林小姐的婚礼 4"
+          "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994531/cn8uwmp80hd5sj6z59kd.jpg",
+          "title": "DSCF2002",
+          "date": "2026.08"
         },
         {
-          "src": "https://picsum.photos/seed/ca1-5/600/800",
-          "title": "林小姐的婚礼 5"
+          "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994535/lmu86b5fc1wjbnb64jgi.jpg",
+          "title": "DSCF2031",
+          "date": "2026.08"
         },
         {
-          "src": "https://picsum.photos/seed/ca1-6/600/800",
-          "title": "林小姐的婚礼 6"
+          "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994535/difko9wbwtzxdbxyosko.jpg",
+          "title": "DSCF1963",
+          "date": "2026.08"
         },
         {
-          "src": "https://picsum.photos/seed/ca1-7/600/800",
-          "title": "林小姐的婚礼 7"
+          "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994538/wh4qadfkxrc47azkragb.jpg",
+          "title": "DSCF1981",
+          "date": "2026.08"
         },
         {
-          "src": "https://picsum.photos/seed/ca1-8/600/800",
-          "title": "林小姐的婚礼 8"
+          "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994535/ceyagefupuw648585tvq.jpg",
+          "title": "DSCF2011",
+          "date": "2026.08"
         },
         {
-          "src": "https://picsum.photos/seed/ca1-9/600/800",
-          "title": "林小姐的婚礼 9"
+          "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994541/thh7yd4zc6p8x6bbkrec.jpg",
+          "title": "DSCF2032",
+          "date": "2026.08"
         }
       ]
     },
@@ -1134,6 +1064,14 @@
     }
   ],
   "videos": [
+    {
+      "type": "video",
+      "src": "https://res.cloudinary.com/fi7vaama/video/upload/v1785994613/qgy7qitm4qz4mnvu8n7r.mov",
+      "thumb": "https://res.cloudinary.com/fi7vaama/video/upload/so_0,f_jpg/v1785994613/qgy7qitm4qz4mnvu8n7r",
+      "title": "DSCF6744",
+      "date": "2026.08",
+      "duration": "—"
+    },
     {
       "type": "video",
       "src": "",
