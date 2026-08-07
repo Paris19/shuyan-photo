@@ -1496,12 +1496,12 @@ function exportData() {
     var url = URL.createObjectURL(blob);
     var a = document.createElement('a');
     a.href = url;
-    a.download = 'gallery-data.json';
+    a.download = 'gallery-config.json';
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
-    showToast('数据已导出！请将 gallery-data.json 复制为 gallery-config.json 并推送到 GitHub','success');
+    showToast('已导出 gallery-config.json！请将文件放到项目目录覆盖旧文件，然后 git push 推送到 GitHub','success');
   } catch(e) {
     showToast('导出失败: ' + e.message, 'error');
   }
@@ -1622,9 +1622,6 @@ function init() {
       })
       .catch(function() { hideLoading(); });
   }
-
-  // Initial render with whatever data we have
-  renderAllGalleries();
 
   // Fallback: hide loading after 15s (URLs load fast)
   setTimeout(hideLoading, 15000);
