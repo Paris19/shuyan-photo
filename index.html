@@ -1602,18 +1602,8 @@ function init() {
     renderAllGalleries();
     hideLoading();
   } else {
-    // Priority 1: Try gallery-config.json (lightweight, Cloudinary URLs)
     fetch('gallery-config.json?v=' + Date.now())
       .then(function(r) { return r.ok ? r.json() : null; })
-      .then(function(data) {
-        if (data && applyGalleryData(data)) {
-          renderAllGalleries();
-          hideLoading();
-          return;
-        }
-        // Priority 2: Fall back to gallery-data.json (base64 data)
-        return fetch('gallery-data.json?v=' + Date.now()).then(function(r) { return r.ok ? r.json() : null; });
-      })
       .then(function(data) {
         if (data && applyGalleryData(data)) {
           renderAllGalleries();
