@@ -1568,6 +1568,7 @@ function applyGalleryData(data) {
   galleryData.clients = data.clients;
   galleryData.videos = data.videos || galleryData.videos;
   migratePropsData();
+  saveData(); // Sync localStorage with latest gallery-config.json
   return true;
 }
 
@@ -1592,28 +1593,33 @@ function migratePropsData() {
 }
 
 function init() {
-  // Hero background will be set by updateHomeImages() after data loads
-
-  // Try loading from localStorage first (for local editing sessions)
-  var hasLocal = loadData();
-
-  if (hasLocal) {
-    // Already have data from localStorage, just render
-    renderAllGalleries();
-    hideLoading();
-  } else {
-    fetch('gallery-config.json?v=' + Date.now())
-      .then(function(r) { return r.ok ? r.json() : null; })
-      .then(function(data) {
-        if (data && applyGalleryData(data)) {
+  // ALWAYS load from gallery-config.json first (it's the source of truth)
+  // localStorage is only a fallback if fetch fails (offline mode)
+  fetch('gallery-config.json?v=' + Date.now())
+    .then(function(r) { return r.ok ? r.json() : null; })
+    .then(function(data) {
+      if (data && applyGalleryData(data)) {
+        renderAllGalleries();
+        hideLoading();
+      } else {
+        // Fetch failed or invalid — try localStorage as fallback
+        var hasLocal = loadData();
+        if (hasLocal) {
           renderAllGalleries();
         }
         hideLoading();
-      })
-      .catch(function() { hideLoading(); });
-  }
+      }
+    })
+    .catch(function() {
+      // Network error — try localStorage
+      var hasLocal = loadData();
+      if (hasLocal) {
+        renderAllGalleries();
+      }
+      hideLoading();
+    });
 
-  // Fallback: hide loading after 15s (URLs load fast)
+  // Fallback: hide loading after 15s
   setTimeout(hideLoading, 15000);
 
   // Setup drag & drop for all upload zones
