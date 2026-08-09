@@ -211,18 +211,118 @@
         "type": "album",
         "cover": "https://picsum.photos/seed/prop1/600/800",
         "title": "道具",
-        "count": 2,
+        "count": 22,
         "date": "2026.07",
         "bts": "",
         "photos": [
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994330/ycwjl1pxwoijlec0d7cg.jpg",
-            "title": "4",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786276011/zn2pftwdnhmquqn9ncau.jpg",
+            "title": "9.11 玉兔0416_(3)",
             "date": "2026.08"
           },
           {
             "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786158239/zppmjfygjnddvhigj1v5.jpg",
             "title": "DSCF4740",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786274198/kfpg37ebr0e4giaxxme8.jpg",
+            "title": "IMG_6830",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786274207/vsqsabsx829sdtewya1a.jpg",
+            "title": "IMG_6845",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786274208/ab2ut47ab3icluf5bmnd.jpg",
+            "title": "IMG_6834",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786274210/vx1hrcjz3tfm6eahmmpl.jpg",
+            "title": "IMG_6846",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786274212/e2rcszeda2swmpgbpu4t.jpg",
+            "title": "IMG_6837",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786274212/vtxyfboawdmfcwdzqwik.jpg",
+            "title": "IMG_6835",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786274220/gtpzib7ppxba1zrhuw2x.jpg",
+            "title": "IMG_6847",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786274222/ed13nasu2ysrkrak08hw.jpg",
+            "title": "IMG_6840",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786274229/glen2yqfuaxejkahym1u.jpg",
+            "title": "IMG_6831",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786274232/oxrxodydi32fntsatlug.jpg",
+            "title": "IMG_6836",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786274233/wjkcccq2pjaroqoeghob.jpg",
+            "title": "IMG_6848",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786274247/nyyx1xfkqbpltns3gu12.jpg",
+            "title": "IMG_6844",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786274256/vfkqfge4snr7a4cebz88.jpg",
+            "title": "IMG_6838",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786274259/aiymbvv80bljrynq5sab.jpg",
+            "title": "IMG_6839",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786274259/zdvlkjztygczv0uxiyja.jpg",
+            "title": "IMG_6841",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786274260/tyoaksfwjyniiniwztg0.jpg",
+            "title": "IMG_6833",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786274258/xcn1kbfh9nbugiphe7md.jpg",
+            "title": "IMG_6832",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786274261/wemqvan5o7c1eoqac2zu.jpg",
+            "title": "IMG_6843",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786274261/la6fuqpwvva7pkly0dno.jpg",
+            "title": "IMG_6842",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786275921/otnhyf2wj2tx4vjwqztr.jpg",
+            "title": "IMG_6852",
             "date": "2026.08"
           }
         ]
@@ -233,7 +333,7 @@
         "type": "album",
         "cover": "https://picsum.photos/seed/makeup1/600/900",
         "title": "汉服妆造",
-        "count": 4,
+        "count": 12,
         "date": "2026.07",
         "bts": "",
         "photos": [
@@ -255,6 +355,46 @@
           {
             "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786092804/nfftgrnrrubsri9bcmpb.jpg",
             "title": "DSCF1420",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786276058/ova3i9lx8jl6hjwkxtdx.jpg",
+            "title": "DSCF6526",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786276083/pnxi9blfjbw7neylopbc.jpg",
+            "title": "DSC_5560-已增强-降噪-1",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786276100/so3wgh68vkb8nbkyhjqy.jpg",
+            "title": "DSCF5963",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786276128/rfozjhormejxsdkpzkxl.jpg",
+            "title": "DSCF7532",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786276159/z52rnlojesrrlampembw.jpg",
+            "title": "9.10 中秋嫦娥仕女图0252",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786276230/sj56v5l2ijtxlq3e1y7o.jpg",
+            "title": "DSCF4804 1",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786276421/qwrn9j2010oj3iko7ofm.jpg",
+            "title": "WechatIMG138",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786276556/eanscxcypnd6lvxb4uqh.jpg",
+            "title": "DSCF9558 1",
             "date": "2026.08"
           }
         ]
@@ -282,14 +422,19 @@
       {
         "type": "album",
         "cover": "https://picsum.photos/seed/makeup3/600/800",
-        "title": "清新裸妆",
-        "count": 1,
+        "title": "上镜妆",
+        "count": 2,
         "date": "2026.05",
         "bts": "",
         "photos": [
           {
             "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786092851/btdx2e543nvrgeuugnxn.jpg",
             "title": "DSC_8700",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786276358/aybw3pjo9ecyzc7kxmer.jpg",
+            "title": "DSCF7069",
             "date": "2026.08"
           }
         ]
@@ -298,7 +443,7 @@
         "type": "album",
         "cover": "https://picsum.photos/seed/makeup4/600/450",
         "title": "日常妆造",
-        "count": 2,
+        "count": 4,
         "date": "2026.04",
         "bts": "",
         "photos": [
@@ -311,6 +456,16 @@
             "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786092952/plqcr5neprdx3yhqqgse.jpg",
             "title": "DSCF0035",
             "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786276272/bds1wslnusk6jqdo7fca.jpg",
+            "title": "DSCF2011",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786276295/qrkvd9pktjnzjqpnpnga.jpg",
+            "title": "DSCF1915",
+            "date": "2026.08"
           }
         ]
       }
@@ -319,14 +474,19 @@
       {
         "type": "album",
         "cover": "https://picsum.photos/seed/hair1/600/800",
-        "title": "手推波造型",
-        "count": 1,
+        "title": "头饰",
+        "count": 2,
         "date": "2026.07",
         "bts": "",
         "photos": [
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1785994455/ttukqpoaen6lrtiqd2ki.jpg",
-            "title": "DSC_0434-已增强-降噪-1",
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786275967/cqtes9rcvtcu3dcihhbt.jpg",
+            "title": "9.11 玉兔0416_(3)",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786275877/o4ziocbtzfof75g1mjml.jpg",
+            "title": "IMG_6849",
             "date": "2026.08"
           }
         ]
@@ -334,42 +494,90 @@
       {
         "type": "album",
         "cover": "https://picsum.photos/seed/hair2/600/600",
-        "title": "编发设计",
-        "count": 1,
+        "title": "轻婚纱道具",
+        "count": 2,
         "date": "2026.06",
         "bts": "",
         "photos": [
           {
-            "src": "https://picsum.photos/seed/hair2/600/600",
-            "title": "编发设计"
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786277258/x7m5ceoseztfj96ftmsi.jpg",
+            "title": "微信图片_20260809200434_52_5",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786275906/ccky1xdob8co4t3qk1g0.jpg",
+            "title": "IMG_6851",
+            "date": "2026.08"
           }
         ]
       },
       {
         "type": "album",
         "cover": "https://picsum.photos/seed/hair3/600/900",
-        "title": "复古卷发",
-        "count": 1,
+        "title": "首饰配饰",
+        "count": 3,
         "date": "2026.05",
         "bts": "",
         "photos": [
           {
-            "src": "https://picsum.photos/seed/hair3/600/900",
-            "title": "复古卷发"
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786277153/mbkzgatzjlvplwquy4ss.jpg",
+            "title": "微信图片_20260809200324_51_5",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786277160/jiloergszatqbedkfhcm.jpg",
+            "title": "微信图片_20260809200323_50_5",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786276705/j8ipjlay0khodeffgaog.jpg",
+            "title": "IMG_6850",
+            "date": "2026.08"
           }
         ]
       },
       {
         "type": "album",
         "cover": "https://picsum.photos/seed/hair4/600/450",
-        "title": "发饰搭配",
-        "count": 1,
+        "title": "耳饰",
+        "count": 7,
         "date": "2026.04",
         "bts": "",
         "photos": [
           {
-            "src": "https://picsum.photos/seed/hair4/600/450",
-            "title": "发饰搭配"
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786277181/q4wrdmhn3ejmchybquyw.jpg",
+            "title": "微信图片_20260809200206_47_5",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786277210/py97tgysrtxyxbgkefg3.jpg",
+            "title": "微信图片_20260809200208_49_5",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786277179/y44hr23mca0gtd9bugd1.jpg",
+            "title": "微信图片_20260809200104_42_5",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786277180/jbiublxwugb38rmpzv6y.jpg",
+            "title": "微信图片_20260809200109_44_5",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786277181/lgwlu7ltbauwzjvznpwz.jpg",
+            "title": "微信图片_20260809200111_45_5",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786277180/r9gg2gaqsozpqewjyu9h.jpg",
+            "title": "微信图片_20260809200113_46_5",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786277181/geefpft6wp4czktbjipz.jpg",
+            "title": "微信图片_20260809200105_43_5",
+            "date": "2026.08"
           }
         ]
       }
@@ -432,6 +640,15 @@
         "bts": "https://res.cloudinary.com/fi7vaama/video/upload/v1786184098/fvrm7rzenfqelfavim2c.mp4",
         "photos": [
           {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786183764/dtcakbbygwthu2asahcj.jpg",
+            "title": "DSCF6041",
+            "date": "2026.08"
+          },
+          {
+            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786183584/dqp117mtf8m8kcoubgpq.jpg",
+            "title": "DSCF5944_(2)"
+          },
+          {
             "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786183762/bgfn2p0zsu2nxuz5dy8y.jpg",
             "title": "DSCF5992",
             "date": "2026.08"
@@ -442,17 +659,8 @@
             "date": "2026.08"
           },
           {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786183584/dqp117mtf8m8kcoubgpq.jpg",
-            "title": "DSCF5944_(2)"
-          },
-          {
             "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786183752/lzfpe8akn79flkamifuc.jpg",
             "title": "DSCF5910",
-            "date": "2026.08"
-          },
-          {
-            "src": "https://res.cloudinary.com/fi7vaama/image/upload/v1786183764/dtcakbbygwthu2asahcj.jpg",
-            "title": "DSCF6041",
             "date": "2026.08"
           },
           {
