@@ -694,7 +694,7 @@ function renderGallery(type,subType) {
     if (isAlbumType) {
       div.className = 'album-card';
       div.innerHTML = `
-        <img class="album-card__cover" src="${(item.photos && item.photos[0]) ? item.photos[0].src : item.cover}" alt="${item.title}" loading="lazy">
+        <img class="album-card__cover" src="${cloudinaryOptimize((item.photos && item.photos[0]) ? item.photos[0].src : item.cover, 600)}" alt="${item.title}" loading="lazy">
         <div class="album-card__overlay"></div>
         <div class="album-card__badge">${item.count}张</div>
         ${showBts && item.bts ? `<button class="album-card__bts album-card__bts--active" onclick="event.stopPropagation();playAlbumBts('${type}',${index})" title="15s花絮视频">
@@ -708,7 +708,7 @@ function renderGallery(type,subType) {
       div.className = 'masonry__item' + (isVideo ? ' masonry__item--video' : '');
       if (isVideo) {
         div.innerHTML = `
-          <img class="masonry__img" src="${item.thumb}" alt="${item.title}" loading="lazy">
+          <img class="masonry__img" src="${cloudinaryOptimize(item.thumb, 400)}" alt="${item.title}" loading="lazy">
           <div class="video-play"><div class="video-play__icon"></div></div>
           <div class="video-duration">${item.duration || ''}</div>
           <div class="masonry__overlay">
@@ -717,7 +717,7 @@ function renderGallery(type,subType) {
           </div>`;
       } else {
         div.innerHTML = `
-          <img class="masonry__img" src="${item.src}" alt="${item.title}" loading="lazy">
+          <img class="masonry__img" src="${cloudinaryOptimize(item.src, 400)}" alt="${item.title}" loading="lazy">
           <div class="masonry__overlay">
             <div class="masonry__title">${item.title}</div>
             <div class="masonry__date">${item.date || ''}</div>
@@ -771,7 +771,7 @@ function renderAlbumPhotos() {
   album.photos.forEach(function(photo,pi) {
     var cell = document.createElement('div');
     cell.className = 'album-detail__photo';
-    cell.innerHTML = '<img src="' + photo.src + '" alt="' + (photo.title||'') + '" loading="lazy">';
+    cell.innerHTML = '<img src="' + cloudinaryOptimize(photo.src, 800) + '" alt="' + (photo.title||'') + '" loading="lazy">';
     cell.onclick = function() { openLightbox(album.photos,pi); };
     gridEl.appendChild(cell);
   });
@@ -819,10 +819,10 @@ function updateLightbox() {
     mediaEl.innerHTML = `<video class="lightbox__media" src="${item.src}" controls autoplay></video>`;
   } else if (item.type === 'video') {
     lbEl.classList.add('lightbox--video');
-    mediaEl.innerHTML = `<img class="lightbox__media" src="${item.thumb}" alt="${item.title}">`;
+    mediaEl.innerHTML = `<img class="lightbox__media" src="${cloudinaryOptimize(item.thumb, 1200)}" alt="${item.title}">`;
   } else {
     lbEl.classList.remove('lightbox--video');
-    mediaEl.innerHTML = `<img class="lightbox__media" src="${item.src}" alt="${item.title}">`;
+    mediaEl.innerHTML = `<img class="lightbox__media" src="${cloudinaryOptimize(item.src, 1600)}" alt="${item.title}">`;
   }
   document.getElementById('lightboxCounter').textContent = (lightboxIndex + 1) + ' / ' + lightboxItems.length;
 }
@@ -885,6 +885,30 @@ function renderAllGalleries() {
   updateHomeImages();
 }
 
+// ===================== CLOUDINARY IMAGE OPTIMIZATION =====================
+function cloudinaryOptimize(url, width, quality) {
+  if (!url || typeof url !== 'string') return url;
+  if (url.indexOf('res.cloudinary.com') === -1) return url;
+  if (url.indexOf('data:') === 0) return url;
+  var w = width || 800;
+  var q = quality || 'auto';
+  // Image URLs: insert f_auto,q_{quality},w_{width} after /image/upload/
+  if (url.indexOf('/image/upload/') !== -1) {
+    if (/\/image\/upload\/v\d/.test(url)) {
+      return url.replace('/image/upload/', '/image/upload/f_auto,q_' + q + ',w_' + w + '/');
+    }
+    return url.replace('/image/upload/', '/image/upload/f_auto,q_' + q + ',w_' + w + ',');
+  }
+  // Video thumbnail URLs: insert q_{quality},w_{width} (skip actual video files)
+  if (url.indexOf('/video/upload/') !== -1 && !/\.(mov|mp4|webm)(\?|$)/.test(url)) {
+    if (/\/video\/upload\/v\d/.test(url)) {
+      return url.replace('/video/upload/', '/video/upload/q_' + q + ',w_' + w + '/');
+    }
+    return url.replace('/video/upload/', '/video/upload/q_' + q + ',w_' + w + ',');
+  }
+  return url;
+}
+
 function getFirstImage(type) {
   var items = getGalleryArray(type, type === 'samples' ? currentSamplesTab : (type === 'props' ? currentPropsTab : null));
   if (!items || items.length === 0) return '';
@@ -902,17 +926,17 @@ function updateHomeImages() {
   var heroBg = document.getElementById('heroBg');
   if (heroBg) {
     if (heroImg) {
-      heroBg.style.backgroundImage = 'url("' + heroImg + '")';
+      heroBg.style.backgroundImage = 'url("' + cloudinaryOptimize(heroImg, 1920, 'auto:best') + '")';
     } else {
       heroBg.style.backgroundImage = "url('hero-bg.jpg')";
     }
   }
   var samplesImg = document.getElementById('home-feature-samples');
-  if (samplesImg) samplesImg.src = heroImg || '';
+  if (samplesImg) samplesImg.src = cloudinaryOptimize(heroImg, 1200, 'auto:best') || '';
   var clientsImg = document.getElementById('home-feature-clients');
-  if (clientsImg) clientsImg.src = getFirstImage('clients') || '';
+  if (clientsImg) clientsImg.src = cloudinaryOptimize(getFirstImage('clients'), 1200, 'auto:best') || '';
   var videosImg = document.getElementById('home-feature-videos');
-  if (videosImg) videosImg.src = getFirstImage('videos') || '';
+  if (videosImg) videosImg.src = cloudinaryOptimize(getFirstImage('videos'), 1200, 'auto:best') || '';
 }
 
 function hideLoading() {
