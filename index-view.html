@@ -220,6 +220,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
 .price-table__cell--desc{color:var(--color-text-secondary);font-size:13px;flex:1}
 .price-table__cell--price{font-family:var(--font-mono);font-size:18px;font-weight:600;color:var(--color-accent);text-align:right;white-space:nowrap;padding-left:16px}
 .price-cta{text-align:center;margin-top:48px}
+.price-wechat{margin-top:20px;font-size:14px;color:var(--color-text-secondary);letter-spacing:.02em}
+.price-wechat__id{font-weight:500;color:var(--color-text-primary);letter-spacing:.05em;user-select:all;cursor:pointer}
 
 /* ===== NOTICE ===== */
 .notice-section{max-width:800px;margin:0 auto;padding:0 48px 96px}
@@ -385,17 +387,17 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
       <div class="home-feature" onclick="showPage('samples')" style="cursor:pointer">
         <img class="home-feature__img" id="home-feature-samples" src="" alt="作品" loading="lazy">
         <h3 class="home-feature__title">作品精选</h3>
-        <p class="home-feature__desc">涵盖人像、风光、纪实等多种风格的专业摄影作品</p>
+        <p class="home-feature__desc">不同风格的摄影作品</p>
       </div>
       <div class="home-feature" onclick="showPage('clients')" style="cursor:pointer">
         <img class="home-feature__img" id="home-feature-clients" src="" alt="客片" loading="lazy">
         <h3 class="home-feature__title">客片展示</h3>
-        <p class="home-feature__desc">真实客照展示 — 记录每一位客户的美好瞬间</p>
+        <p class="home-feature__desc">记录每一位客户的美好瞬间</p>
       </div>
       <div class="home-feature" onclick="showPage('videos')" style="cursor:pointer">
         <img class="home-feature__img" id="home-feature-videos" src="" alt="视频" loading="lazy">
         <h3 class="home-feature__title">视频作品</h3>
-        <p class="home-feature__desc">动态影像记录每一个动人瞬间</p>
+        <p class="home-feature__desc">记录每一个动人瞬间</p>
       </div>
     </div>
   </div>
@@ -470,13 +472,13 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;color:inhe
       <table class="price-table">
         <tr class="price-table__row"><td class="price-table__cell price-table__cell--name">新中式 / 旗袍 / 朝鲜服</td><td class="price-table__cell price-table__cell--desc">精修 9 张</td><td class="price-table__cell price-table__cell--price">¥799</td></tr>
         <tr class="price-table__row"><td class="price-table__cell price-table__cell--name">汉服</td><td class="price-table__cell price-table__cell--desc">精修 9 张</td><td class="price-table__cell price-table__cell--price">¥899</td></tr>
-        <tr class="price-table__row"><td class="price-table__cell price-table__cell--name">个人定制</td><td class="price-table__cell price-table__cell--desc">妆造服装不与任何人重合 · 适合有想法又创意可以一起沟通的拍摄</td><td class="price-table__cell price-table__cell--price">¥1,099</td></tr>
+        <tr class="price-table__row"><td class="price-table__cell price-table__cell--name">个人定制</td><td class="price-table__cell price-table__cell--desc">适合有想法有创意可以一起沟通的拍摄</td><td class="price-table__cell price-table__cell--price">¥1,099</td></tr>
         <tr class="price-table__row"><td class="price-table__cell price-table__cell--name">两套（任意组合）</td><td class="price-table__cell price-table__cell--desc">精修 20 张</td><td class="price-table__cell price-table__cell--price">¥1,499</td></tr>
         <tr class="price-table__row"><td class="price-table__cell price-table__cell--name">相机视频 + 剪辑</td><td class="price-table__cell price-table__cell--desc">拍摄 + 剪辑 15s 左右的视频</td><td class="price-table__cell price-table__cell--price">+¥400</td></tr>
       </table>
     </div>
     <div class="price-cta">
-      <button class="btn-primary" onclick="showToast('预约请求已发送，我们将在 24 小时内联系您','success')">预约咨询</button>
+      <p class="price-wechat">微信咨询：<span class="price-wechat__id">shuyan-2026</span></p>
     </div>
   </div>
 
